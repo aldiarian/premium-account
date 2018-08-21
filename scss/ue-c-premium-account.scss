@@ -28,7 +28,7 @@
 		font-size: 12px;
 	}
 	.is-s{
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.is-m{
 		font-size: 16px;
@@ -42,6 +42,9 @@
 	.is-centered{
 		text-align: center;
 		display: block;
+	}
+	.is-italic{
+		font-style: italic;
 	}
 	.is-active{
 		opacity:1;
@@ -110,21 +113,32 @@
 			margin-right: 20px;
 		}
 	}
-	&__step{
-		position: relative;
-	}
-	&__steps{
-		position: absolute;
-		top: -15px;
-	}
 	&__plan{
-		color: $color2;
 		display: flex;
 		justify-content: space-between;
-		padding: 8px 0 6px;
+		padding: 8px ;
+		margin: -8px;
+		background-color: $color5;
+		margin-bottom: 1rem;
+		p{
+			margin-bottom: 0;
+		}
+	}
+	&__plan-text & p{
+		margin-bottom: 0;
+	}
+	&__plan-button {
+		border:1px solid $color3;
+		border-radius: 5px;
+		cursor: pointer;
+		color: $color3;
+		background-color: transparent;
+		&:hover{
+			text-decoration: underline;
+			background-color: #fff;
+		}
 	}
 	&__account{
-		padding-bottom: 14px;
 		border-bottom: 1px solid $color1;
 		margin-bottom: 20px;
 	}

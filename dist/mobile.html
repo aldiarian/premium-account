@@ -1324,16 +1324,14 @@
                 
                 	<div class="ue-c-premium-account__container">
                 
-                		<div class="ue-c-premium-account__step">
-                			<h1 class="is-xl">Crea tu cuenta</h1>
-                			<p class="ue-c-premium-account__steps is-xs">Paso
-                				<strong>1</strong> de 2</p>
-                		</div>
                 		<div class="ue-c-premium-account__plan ">
-                			<p class="is-m">Plan anual de 90 € </p>
-                			<a class="is-s" href="">Selcciona otro plan</a>
+                			<p class="ue-c-premium-account__plan-text is-s">Has seleccionado: <br><strong>Plan anual de 90 €</strong> </p>
+                			<button type="button" class="ue-c-premium-account__plan-button is-s" href="">cambiar plan</button>
                 		</div>
-                		<div class="ue-c-premium-account__account is-centered">
+                		<div class="ue-c-premium-account__step">
+                			<p class="ue-c-premium-account__steps is-s">Paso <strong>1</strong> de 2 - <strong>Crea tu cuenta</strong></p>
+                		</div>
+                		<div class="ue-c-premium-account__account ">
                 			<p class="">¿Ya tienes una cuenta?
                 				<a href="">Inicia sesión</a>
                 			</p>
@@ -1459,15 +1457,19 @@
                 
                 	<div class="ue-c-premium-account__container">
                 
-                		<div class="ue-c-premium-account__step">
-                			<h1 class="is-xl">Método de pago</h1>
-                			<p class="ue-c-premium-account__steps is-xs">Paso
-                				<strong>2</strong> de 2</p>
-                		</div>
                 		<div class="ue-c-premium-account__plan ">
-                			<p class="is-m">Plan anual de 90 € </p>
-                			<a class="is-s" href="">Selcciona otro plan</a>
+                			<p class="ue-c-premium-account__plan-text is-s">Has seleccionado: <br><strong>Plan anual de 90 €</strong> </p>
+                			<button type="button" class="ue-c-premium-account__plan-button is-s" href="">cambiar plan</button>
                 		</div>
+                		<div class="ue-c-premium-account__step">
+                			<p class="ue-c-premium-account__steps is-s">Paso <strong>2</strong> de 2 - <strong>Selecciona método de pago</strong></p>
+                		</div>
+                		<div class="ue-c-premium-account__account ">
+                			<p class="">¿Ya tienes una cuenta?
+                				<a href="">Inicia sesión</a>
+                			</p>
+                		</div>
+                
                 	</div>
                 
                 	<div class="ue-c-premium-account__paypal is-l">
@@ -1561,6 +1563,26 @@
                 		<p class="is-m">Vemos que ya tienes contratado un plan Premium. Para obtener más información sobre el estado de tu cuenta puedes consultar
                 			todos los datos en tu área de perfil o bien acudir a <a href="">nuestra área de preguntas frecuentes</a>  para resolver cualquier duda sobre Premium</p>
                 		<button class="ue-c-premium-account__button is-l" type="button">Aceptar y regresar</button>
+                	</div>
+                </div>
+                
+                
+                <h3 class="separador">Código propocional</h3>
+                <div class="ue-c-premium-account">
+                	<div class="ue-c-premium-account__promotional ">
+                		<h2 class="is-l">Código promocional</h2>
+                		<p class="is-s is-italic"><strong>¿Tienes un código promocional?</strong> Canjéalo y disfruta de las ventajas Premium</p>
+                		<form id="promotional-code-form">
+                			<label for="promotional-code">Introduce el código promocional</label>
+                			<span class="is-error">
+                				<svg role="presentation" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style=" pointer-events: none; display: block; " aria-hidden="true" >
+                					<g ><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" ></path></g>
+                				</svg>
+                			 	<p>Introduce un código promocional válido</p>	
+                			</span>
+                			<input type="text" id="promotional-code" name="code-promotional" class="ue-c-premium-account__input-mail">
+                			<button class="ue-c-premium-account__button is-l"  form="promotional-code-form" type="submit">Canjear código y continuar</button>
+                		</form>
                 	</div>
                 </div>
 

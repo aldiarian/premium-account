@@ -18,9 +18,6 @@
 	a{
 		color:#2a7aac;
 	}
-	iframe{
-		margin: 20px 0;
-	}
 	.is-xxs{
 		font-size: 11px;
 	}
@@ -62,6 +59,9 @@
 			fill: $error;
 			height: 20px;
 		}
+	}
+	.is-hidden{
+		display: none;
 	}
 	&__input{
 		position: relative;
@@ -128,7 +128,7 @@
 		margin-bottom: 0;
 	}
 	&__plan-button {
-		border:1px solid $color3;
+		border:1px solid $color6;
 		border-radius: 5px;
 		cursor: pointer;
 		color: $color3;
@@ -139,7 +139,6 @@
 		}
 	}
 	&__account{
-		border-bottom: 1px solid $color1;
 		margin-bottom: 20px;
 	}
 	&__accept{
@@ -148,6 +147,7 @@
 	&__rrss {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: 1rem;
 	}
 	&__rrss-element{
 		transition: opacity .2s ease-out;
@@ -176,7 +176,7 @@
 	}
 	&__bookmark{
 		text-align: center;
-		width: 80%;
+		width: 100%;
 		position: relative;
 		margin: 10px auto;
 		&::after{
@@ -215,7 +215,7 @@
 		display: flex;
 		align-items: center;
 		border: 1px solid $color1;
-		border-radius:13px;
+		border-radius:5px;
 		height: 56px;
 		padding: 0 16px;
 		justify-content: space-between;
@@ -264,5 +264,13 @@
 	}
 	&__confirm-label{
 		margin: 0 0 0 5px;
+	}
+	&__help{
+		background-color:#f2f3f4;
+		padding: 10px 0;
+		p{
+			margin-bottom: 0;
+			line-height: 1.5rem;
+		}
 	}
 }

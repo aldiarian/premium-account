@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Roboto Regular";
-  src: url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot");
-  src: url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff") format("woff"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf") format("ttf");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot");
-  src: url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"), url("https://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("ttf");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("ttf");
 }
 
 /* line 6, scss/ue-c-premium-account.scss */
@@ -79,57 +79,52 @@
 }
 
 /* line 21, scss/ue-c-premium-account.scss */
-.ue-c-premium-account iframe {
-  margin: 20px 0;
-}
-
-/* line 24, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-xxs {
   font-size: 11px;
 }
 
-/* line 27, scss/ue-c-premium-account.scss */
+/* line 24, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-xs {
   font-size: 12px;
 }
 
-/* line 30, scss/ue-c-premium-account.scss */
+/* line 27, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-s {
   font-size: 14px;
 }
 
-/* line 33, scss/ue-c-premium-account.scss */
+/* line 30, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-m {
   font-size: 16px;
 }
 
-/* line 36, scss/ue-c-premium-account.scss */
+/* line 33, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-l {
   font-size: 20px;
 }
 
-/* line 39, scss/ue-c-premium-account.scss */
+/* line 36, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-xl {
   font-size: 26px;
 }
 
-/* line 42, scss/ue-c-premium-account.scss */
+/* line 39, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-centered {
   text-align: center;
   display: block;
 }
 
-/* line 46, scss/ue-c-premium-account.scss */
+/* line 43, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-italic {
   font-style: italic;
 }
 
-/* line 49, scss/ue-c-premium-account.scss */
+/* line 46, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-active {
   opacity: 1;
 }
 
-/* line 52, scss/ue-c-premium-account.scss */
+/* line 49, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-error {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,17 +135,22 @@
   margin: 3px 0 0px 0px;
 }
 
-/* line 56, scss/ue-c-premium-account.scss */
+/* line 53, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-error p {
   color: #c62514;
   font-size: 14px;
   margin: 5px 0 5px 5px;
 }
 
-/* line 61, scss/ue-c-premium-account.scss */
+/* line 58, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-error svg {
   fill: #c62514;
   height: 20px;
+}
+
+/* line 63, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-hidden {
+  display: none;
 }
 
 /* line 66, scss/ue-c-premium-account.scss */
@@ -242,7 +242,7 @@
 
 /* line 130, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
-  border: 1px solid #2a7aac;
+  border: 1px solid #e2e2e2;
   border-radius: 5px;
   cursor: pointer;
   color: #2a7aac;
@@ -257,16 +257,15 @@
 
 /* line 141, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__account {
-  border-bottom: 1px solid #e2e2e2;
   margin-bottom: 20px;
 }
 
-/* line 145, scss/ue-c-premium-account.scss */
+/* line 144, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 148, scss/ue-c-premium-account.scss */
+/* line 147, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -274,6 +273,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 /* line 152, scss/ue-c-premium-account.scss */
@@ -313,7 +313,7 @@
 /* line 177, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
-  width: 80%;
+  width: 100%;
   position: relative;
   margin: 10px auto;
 }
@@ -366,7 +366,7 @@
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #e2e2e2;
-  border-radius: 13px;
+  border-radius: 5px;
   height: 56px;
   padding: 0 16px;
   -webkit-box-pack: justify;
@@ -448,4 +448,16 @@
 /* line 265, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
+}
+
+/* line 268, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__help {
+  background-color: #f2f3f4;
+  padding: 10px 0;
+}
+
+/* line 271, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__help p {
+  margin-bottom: 0;
+  line-height: 1.5rem;
 }

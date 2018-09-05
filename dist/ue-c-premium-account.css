@@ -12,7 +12,7 @@
 
 /* line 6, scss/ue-c-premium-account.scss */
 .ue-c-premium-account {
-  width: 320px;
+  width: 342px;
   display: block;
   margin: 0 auto;
   font-family: "Roboto Regular";
@@ -155,11 +155,52 @@
 }
 
 /* line 67, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__header {
+  background-color: #fff;
+  height: 44px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media all and (min-width: 480px) {
+  /* line 67, scss/ue-c-premium-account.scss */
+  .ue-c-premium-account__header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+  }
+}
+
+/* line 84, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__header-logo svg {
+  width: 150px;
+}
+
+@media all and (min-width: 480px) {
+  /* line 84, scss/ue-c-premium-account.scss */
+  .ue-c-premium-account__header-logo svg {
+    width: 294px;
+  }
+}
+
+/* line 91, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input {
   position: relative;
 }
 
-/* line 70, scss/ue-c-premium-account.scss */
+/* line 94, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
   width: 100%;
   height: 45px;
@@ -170,18 +211,18 @@
 }
 
 @media all and (min-width: 800px) {
-  /* line 70, scss/ue-c-premium-account.scss */
+  /* line 94, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
     font-size: 14px;
   }
 }
 
-/* line 82, scss/ue-c-premium-account.scss */
+/* line 106, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password {
   margin-bottom: 0;
 }
 
-/* line 88, scss/ue-c-premium-account.scss */
+/* line 112, scss/ue-c-premium-account.scss */
 .ue-c-premium-account input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
 .ue-c-premium-account input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   visibility: hidden;
@@ -192,7 +233,7 @@
   margin: 0;
 }
 
-/* line 99, scss/ue-c-premium-account.scss */
+/* line 123, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__password-eye {
   position: absolute;
   right: 10px;
@@ -205,19 +246,19 @@
   height: 13px;
 }
 
-/* line 109, scss/ue-c-premium-account.scss */
+/* line 133, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription {
   border: transparent;
   padding: 0;
   margin: 20px 0;
 }
 
-/* line 113, scss/ue-c-premium-account.scss */
+/* line 137, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription label:first-of-type {
   margin-right: 20px;
 }
 
-/* line 117, scss/ue-c-premium-account.scss */
+/* line 141, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,17 +272,17 @@
   margin-bottom: 1rem;
 }
 
-/* line 124, scss/ue-c-premium-account.scss */
+/* line 148, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan p {
   margin-bottom: 0;
 }
 
-/* line 128, scss/ue-c-premium-account.scss */
+/* line 152, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-text .ue-c-premium-account p {
   margin-bottom: 0;
 }
 
-/* line 131, scss/ue-c-premium-account.scss */
+/* line 155, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
   border: 1px solid #e2e2e2;
   border-radius: 5px;
@@ -250,23 +291,23 @@
   background-color: transparent;
 }
 
-/* line 137, scss/ue-c-premium-account.scss */
+/* line 161, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button:hover {
   text-decoration: underline;
   background-color: #fff;
 }
 
-/* line 142, scss/ue-c-premium-account.scss */
+/* line 166, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__account {
   margin-bottom: 20px;
 }
 
-/* line 145, scss/ue-c-premium-account.scss */
+/* line 169, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 148, scss/ue-c-premium-account.scss */
+/* line 172, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,7 +318,7 @@
   margin-bottom: 1rem;
 }
 
-/* line 153, scss/ue-c-premium-account.scss */
+/* line 177, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element {
   -webkit-transition: opacity .2s ease-out;
   transition: opacity .2s ease-out;
@@ -289,13 +330,13 @@
   max-width: 160px;
 }
 
-/* line 161, scss/ue-c-premium-account.scss */
+/* line 185, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element:hover {
   opacity: .7;
   cursor: pointer;
 }
 
-/* line 166, scss/ue-c-premium-account.scss */
+/* line 190, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button {
   width: 100%;
   background-color: #2a7aac;
@@ -306,14 +347,14 @@
   margin-bottom: 10px;
 }
 
-/* line 174, scss/ue-c-premium-account.scss */
+/* line 198, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button:hover {
   background-color: #226894;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 180, scss/ue-c-premium-account.scss */
+/* line 204, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
   width: 100%;
@@ -321,7 +362,7 @@
   margin: 10px auto;
 }
 
-/* line 185, scss/ue-c-premium-account.scss */
+/* line 209, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark::after {
   content: "";
   width: 100%;
@@ -333,7 +374,7 @@
   z-index: -1;
 }
 
-/* line 195, scss/ue-c-premium-account.scss */
+/* line 219, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark p {
   font-size: 18px;
   line-height: 18px;
@@ -345,7 +386,7 @@
   z-index: 1;
 }
 
-/* line 206, scss/ue-c-premium-account.scss */
+/* line 230, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext {
   color: #5d6d7e;
   padding: 10px 0;
@@ -354,12 +395,12 @@
   margin: 30px 0;
 }
 
-/* line 212, scss/ue-c-premium-account.scss */
+/* line 236, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext p {
   line-height: 13px;
 }
 
-/* line 216, scss/ue-c-premium-account.scss */
+/* line 240, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal {
   font-family: "Roboto Medium";
   display: -webkit-box;
@@ -379,12 +420,12 @@
   cursor: pointer;
 }
 
-/* line 227, scss/ue-c-premium-account.scss */
+/* line 251, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal:hover {
   background-color: #e2e2e2;
 }
 
-/* line 231, scss/ue-c-premium-account.scss */
+/* line 255, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,18 +435,18 @@
   align-items: center;
 }
 
-/* line 234, scss/ue-c-premium-account.scss */
+/* line 258, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span {
   margin-right: 8px;
 }
 
-/* line 239, scss/ue-c-premium-account.scss */
+/* line 263, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card {
   font-family: "Roboto Medium";
   margin-bottom: 16px;
 }
 
-/* line 243, scss/ue-c-premium-account.scss */
+/* line 267, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -418,22 +459,22 @@
   align-items: center;
 }
 
-/* line 249, scss/ue-c-premium-account.scss */
+/* line 273, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message {
   text-align: center;
 }
 
-/* line 251, scss/ue-c-premium-account.scss */
+/* line 275, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message p {
   margin: 30px 0;
 }
 
-/* line 256, scss/ue-c-premium-account.scss */
+/* line 280, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container {
   position: relative;
 }
 
-/* line 259, scss/ue-c-premium-account.scss */
+/* line 283, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,25 +482,25 @@
   margin: 20px 0;
 }
 
-/* line 263, scss/ue-c-premium-account.scss */
+/* line 287, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-input {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
 
-/* line 268, scss/ue-c-premium-account.scss */
+/* line 292, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
 }
 
-/* line 271, scss/ue-c-premium-account.scss */
+/* line 295, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
   background-color: #f2f3f4;
   padding: 10px 0;
 }
 
-/* line 274, scss/ue-c-premium-account.scss */
+/* line 298, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help p {
   margin-bottom: 0;
   line-height: 1.5rem;

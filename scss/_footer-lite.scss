@@ -1,0 +1,154 @@
+// FOOTER
+
+.ue-c-footer-lite {
+  font-family: $font-footer;
+  ul {
+    list-style: none;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5em;
+    @media all and (min-width: $mq1) {
+      margin-bottom: 0;
+    };
+  }
+  .is-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  &__copyright {
+    text-align: center;
+    font-size: 12px;
+    address {
+      font-style: normal;
+    }
+    @media all and (min-width: $mq1) {
+      margin: 0 4em;
+    };
+  }
+
+  &__icon-elmundo {
+    width: 146px;
+    height: 26px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__social-networks {
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: $mq1) {
+      order: 3;
+    };
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding: 0 10px;
+  }
+  &__icon-twitter {
+    &:hover {
+      #twitter-fondo {
+        fill: #326e9b;
+      }
+      #twitter-icon {
+        fill: #fff;
+      }
+    }
+  }
+  &__icon-facebook {
+    &:hover {
+      #facebook-fondo {
+        fill: #326e9b;
+      }
+      #facebook-icon {
+        fill: #fff;
+      }
+    }
+  }
+  &__icon-rss {
+    &:hover {
+      #rss-fondo {
+        fill: #326e9b;
+      }
+      #rss-icon {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__partners {
+    display: flex;
+    justify-content: center;
+    @media all and (min-width: $mq1) {
+      order: 1;
+    };
+  }
+  &__partner {
+    padding: 0 5px;
+    display: block;
+  }
+  &__partners-reverso {
+    height: 34px;
+    width: 34px;
+  }
+  &__partners-ntt {
+    width: 100px;
+    height: 34px;
+  }
+  &__list-copyright {
+    margin-bottom: 1.5em;
+    padding: 0.75em;
+    border-top: 1px solid $color5;
+    border-bottom: 1px solid $color5;
+    @media all and (min-width: $mq1) {
+      border:0;
+      order: 2;
+      margin: 0;
+      padding: 0;
+    };
+  }
+  &__list-corporative {
+    padding: 0.75em 0;
+    border-top: 1px solid $color5;
+    border-bottom: 1px solid $color5;
+    text-align: center;
+    li {
+      display: inline-block;
+      &:after {
+        content: "|";
+        margin: 0 10px;
+      }
+      &:last-of-type {
+        &:after {
+          content: "";
+          margin: 0;
+        }
+      }
+      a {
+        font-size: 13px;
+        color: #4a4a4a;
+        text-decoration: none;
+        &:hover {
+          color: #49a3db;
+        }
+      }
+    }
+  }
+  &__container-first{
+    @media all and (min-width: $mq1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0;
+      border-top:1px solid $color5;
+    };
+  }
+}

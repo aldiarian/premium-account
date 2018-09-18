@@ -1,18 +1,66 @@
 @font-face {
+  font-family: "Clear Sans";
+  src: url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.eot");
+  src: url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff2") format("woff2"), url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.ttf") format("ttf");
+}
+
+@font-face {
   font-family: "Roboto Regular";
-  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot");
-  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf") format("ttf");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot") format("eot");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "Roboto Medium";
-  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot");
-  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("ttf");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot") format("eot");
+  src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"), url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("ttf");
 }
 
-/* line 6, scss/ue-c-premium-account.scss */
+/* line 1, scss/_header-lite.scss */
+.ue-c-header-lite {
+  background-color: #fff;
+  height: 44px;
+  padding: 0 1rem;
+  border-bottom: 1px solid #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) {
+  /* line 1, scss/_header-lite.scss */
+  .ue-c-header-lite {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    padding: 0;
+  }
+}
+
+/* line 18, scss/_header-lite.scss */
+.ue-c-header-lite__logo svg {
+  width: 150px;
+}
+
+@media all and (min-width: 480px) {
+  /* line 18, scss/_header-lite.scss */
+  .ue-c-header-lite__logo svg {
+    width: 294px;
+  }
+}
+
+/* line 7, scss/ue-c-premium-account.scss */
 .ue-c-premium-account {
-  width: 342px;
+  max-width: 342px;
   display: block;
   margin: 0 auto;
   font-family: "Roboto Regular";
@@ -115,46 +163,62 @@
 }
 
 /* line 43, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-bottom {
+  margin-bottom: 2em;
+  display: block;
+}
+
+/* line 47, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-italic {
   font-style: italic;
 }
 
-/* line 46, scss/ue-c-premium-account.scss */
+/* line 50, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-active {
   opacity: 1;
 }
 
-/* line 49, scss/ue-c-premium-account.scss */
-.ue-c-premium-account .is-error {
+/* line 53, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-error,
+.ue-c-premium-account .is-correct {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 3px 0 0px 0px;
 }
 
-/* line 53, scss/ue-c-premium-account.scss */
-.ue-c-premium-account .is-error p {
-  color: #c62514;
+/* line 58, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-error p,
+.ue-c-premium-account .is-correct p {
+  color: #cc2714;
   font-size: 14px;
-  margin: 5px 0 5px 5px;
+  margin: 0 0 5px 5px;
 }
 
-/* line 58, scss/ue-c-premium-account.scss */
-.ue-c-premium-account .is-error svg {
-  fill: #c62514;
+/* line 63, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-error svg,
+.ue-c-premium-account .is-correct svg {
+  fill: #cc2714;
   height: 20px;
   width: 20px;
 }
 
-/* line 64, scss/ue-c-premium-account.scss */
+/* line 70, scss/ue-c-premium-account.scss */
+.ue-c-premium-account .is-correct p,
+.ue-c-premium-account .is-correct svg {
+  fill: black;
+  color: black;
+}
+
+/* line 76, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-hidden {
   display: none;
 }
 
-/* line 67, scss/ue-c-premium-account.scss */
+/* line 79, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__header {
   background-color: #fff;
   height: 44px;
@@ -172,7 +236,7 @@
 }
 
 @media all and (min-width: 480px) {
-  /* line 67, scss/ue-c-premium-account.scss */
+  /* line 79, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -183,46 +247,48 @@
   }
 }
 
-/* line 84, scss/ue-c-premium-account.scss */
+/* line 96, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__header-logo svg {
   width: 150px;
 }
 
 @media all and (min-width: 480px) {
-  /* line 84, scss/ue-c-premium-account.scss */
+  /* line 96, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__header-logo svg {
     width: 294px;
   }
 }
 
-/* line 91, scss/ue-c-premium-account.scss */
+/* line 103, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input {
   position: relative;
 }
 
-/* line 94, scss/ue-c-premium-account.scss */
+/* line 106, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 45px;
-  padding: 0 10px;
+  padding-left: 10px;
   font-size: 16px;
   color: #4e4e4e;
   margin-bottom: 20px;
 }
 
 @media all and (min-width: 800px) {
-  /* line 94, scss/ue-c-premium-account.scss */
+  /* line 106, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
     font-size: 14px;
   }
 }
 
-/* line 106, scss/ue-c-premium-account.scss */
+/* line 119, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password {
   margin-bottom: 0;
 }
 
-/* line 112, scss/ue-c-premium-account.scss */
+/* line 125, scss/ue-c-premium-account.scss */
 .ue-c-premium-account input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
 .ue-c-premium-account input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   visibility: hidden;
@@ -233,7 +299,7 @@
   margin: 0;
 }
 
-/* line 123, scss/ue-c-premium-account.scss */
+/* line 136, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__password-eye {
   position: absolute;
   right: 10px;
@@ -241,24 +307,24 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
-  opacity: .3;
+  opacity: 0.3;
   width: 20px;
   height: 13px;
 }
 
-/* line 133, scss/ue-c-premium-account.scss */
+/* line 146, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription {
   border: transparent;
   padding: 0;
   margin: 20px 0;
 }
 
-/* line 137, scss/ue-c-premium-account.scss */
+/* line 150, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription label:first-of-type {
   margin-right: 20px;
 }
 
-/* line 141, scss/ue-c-premium-account.scss */
+/* line 154, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,17 +338,17 @@
   margin-bottom: 1rem;
 }
 
-/* line 148, scss/ue-c-premium-account.scss */
+/* line 161, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan p {
   margin-bottom: 0;
 }
 
-/* line 152, scss/ue-c-premium-account.scss */
+/* line 165, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-text .ue-c-premium-account p {
   margin-bottom: 0;
 }
 
-/* line 155, scss/ue-c-premium-account.scss */
+/* line 168, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
   border: 1px solid #e2e2e2;
   border-radius: 5px;
@@ -291,23 +357,18 @@
   background-color: transparent;
 }
 
-/* line 161, scss/ue-c-premium-account.scss */
+/* line 174, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button:hover {
   text-decoration: underline;
   background-color: #fff;
 }
 
-/* line 166, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__account {
-  margin-bottom: 20px;
-}
-
-/* line 169, scss/ue-c-premium-account.scss */
+/* line 179, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 172, scss/ue-c-premium-account.scss */
+/* line 182, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,10 +379,10 @@
   margin-bottom: 1rem;
 }
 
-/* line 177, scss/ue-c-premium-account.scss */
+/* line 187, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element {
-  -webkit-transition: opacity .2s ease-out;
-  transition: opacity .2s ease-out;
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
   border: none;
   padding: 0;
   margin: 0;
@@ -330,13 +391,13 @@
   max-width: 160px;
 }
 
-/* line 185, scss/ue-c-premium-account.scss */
+/* line 195, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element:hover {
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 
-/* line 190, scss/ue-c-premium-account.scss */
+/* line 200, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button {
   width: 100%;
   background-color: #2a7aac;
@@ -347,14 +408,14 @@
   margin-bottom: 10px;
 }
 
-/* line 198, scss/ue-c-premium-account.scss */
+/* line 208, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button:hover {
   background-color: #226894;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 204, scss/ue-c-premium-account.scss */
+/* line 214, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
   width: 100%;
@@ -362,7 +423,7 @@
   margin: 10px auto;
 }
 
-/* line 209, scss/ue-c-premium-account.scss */
+/* line 219, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark::after {
   content: "";
   width: 100%;
@@ -374,7 +435,7 @@
   z-index: -1;
 }
 
-/* line 219, scss/ue-c-premium-account.scss */
+/* line 229, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark p {
   font-size: 18px;
   line-height: 18px;
@@ -386,21 +447,21 @@
   z-index: 1;
 }
 
-/* line 230, scss/ue-c-premium-account.scss */
+/* line 240, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext {
   color: #5d6d7e;
   padding: 10px 0;
   border-top: 1px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
-  margin: 30px 0;
+  margin: 0;
 }
 
-/* line 236, scss/ue-c-premium-account.scss */
+/* line 246, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext p {
   line-height: 13px;
 }
 
-/* line 240, scss/ue-c-premium-account.scss */
+/* line 250, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal {
   font-family: "Roboto Medium";
   display: -webkit-box;
@@ -420,12 +481,12 @@
   cursor: pointer;
 }
 
-/* line 251, scss/ue-c-premium-account.scss */
+/* line 261, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal:hover {
   background-color: #e2e2e2;
 }
 
-/* line 255, scss/ue-c-premium-account.scss */
+/* line 265, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,18 +496,18 @@
   align-items: center;
 }
 
-/* line 258, scss/ue-c-premium-account.scss */
+/* line 268, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span {
   margin-right: 8px;
 }
 
-/* line 263, scss/ue-c-premium-account.scss */
+/* line 273, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card {
   font-family: "Roboto Medium";
   margin-bottom: 16px;
 }
 
-/* line 267, scss/ue-c-premium-account.scss */
+/* line 277, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,22 +520,33 @@
   align-items: center;
 }
 
-/* line 273, scss/ue-c-premium-account.scss */
+/* line 283, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message {
   text-align: center;
 }
 
-/* line 275, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__message p {
-  margin: 30px 0;
+/* line 286, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-correct {
+  padding: 1em .5em;
+  color: #0b7542;
+  background-color: #eaffe7;
+  margin-bottom: 2em;
 }
 
-/* line 280, scss/ue-c-premium-account.scss */
+/* line 292, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-error {
+  padding: 1em .5em;
+  color: #cc2714;
+  background-color: #f9e6e6;
+  margin-bottom: 2em;
+}
+
+/* line 298, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container {
   position: relative;
 }
 
-/* line 283, scss/ue-c-premium-account.scss */
+/* line 301, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,26 +554,306 @@
   margin: 20px 0;
 }
 
-/* line 287, scss/ue-c-premium-account.scss */
+/* line 305, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-input {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
 
-/* line 292, scss/ue-c-premium-account.scss */
+/* line 310, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
 }
 
-/* line 295, scss/ue-c-premium-account.scss */
+/* line 313, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
-  background-color: #f2f3f4;
+  background-color: #edeef0;
   padding: 10px 0;
 }
 
-/* line 298, scss/ue-c-premium-account.scss */
+/* line 316, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help p {
   margin-bottom: 0;
   line-height: 1.5rem;
+}
+
+/* line 320, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__help span a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 324, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__help a {
+  margin-bottom: 0;
+}
+
+/* line 328, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-form {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #edeef0;
+}
+
+/* line 333, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__list {
+  margin: 1.5em 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 338, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__list-element {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 1em;
+  margin-right: 0;
+  font-size: 13px;
+}
+
+/* line 344, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__list-element::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #2a7aac;
+  border-radius: 120px;
+}
+
+/* line 355, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__spinner-text {
+  color: #5d6d7e;
+}
+
+/* line 3, scss/_footer-lite.scss */
+.ue-c-footer-lite {
+  font-family: "Clear Sans", Arial, sans-serif, helvetica;
+}
+
+/* line 5, scss/_footer-lite.scss */
+.ue-c-footer-lite ul {
+  list-style: none;
+}
+
+/* line 8, scss/_footer-lite.scss */
+.ue-c-footer-lite__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1.5em;
+}
+
+@media all and (min-width: 480px) {
+  /* line 8, scss/_footer-lite.scss */
+  .ue-c-footer-lite__list {
+    margin-bottom: 0;
+  }
+}
+
+/* line 17, scss/_footer-lite.scss */
+.ue-c-footer-lite .is-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 25, scss/_footer-lite.scss */
+.ue-c-footer-lite__copyright {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 28, scss/_footer-lite.scss */
+.ue-c-footer-lite__copyright address {
+  font-style: normal;
+}
+
+@media all and (min-width: 480px) {
+  /* line 25, scss/_footer-lite.scss */
+  .ue-c-footer-lite__copyright {
+    margin: 0 4em;
+  }
+}
+
+/* line 36, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-elmundo {
+  width: 146px;
+  height: 26px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 43, scss/_footer-lite.scss */
+.ue-c-footer-lite__social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media all and (min-width: 480px) {
+  /* line 43, scss/_footer-lite.scss */
+  .ue-c-footer-lite__social-networks {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+}
+
+/* line 50, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0 10px;
+}
+
+/* line 58, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-twitter:hover #twitter-fondo {
+  fill: #326e9b;
+}
+
+/* line 61, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-twitter:hover #twitter-icon {
+  fill: #fff;
+}
+
+/* line 68, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-facebook:hover #facebook-fondo {
+  fill: #326e9b;
+}
+
+/* line 71, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-facebook:hover #facebook-icon {
+  fill: #fff;
+}
+
+/* line 78, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-rss:hover #rss-fondo {
+  fill: #326e9b;
+}
+
+/* line 81, scss/_footer-lite.scss */
+.ue-c-footer-lite__icon-rss:hover #rss-icon {
+  fill: #fff;
+}
+
+/* line 87, scss/_footer-lite.scss */
+.ue-c-footer-lite__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media all and (min-width: 480px) {
+  /* line 87, scss/_footer-lite.scss */
+  .ue-c-footer-lite__partners {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+/* line 94, scss/_footer-lite.scss */
+.ue-c-footer-lite__partner {
+  padding: 0 5px;
+  display: block;
+}
+
+/* line 98, scss/_footer-lite.scss */
+.ue-c-footer-lite__partners-reverso {
+  height: 34px;
+  width: 34px;
+}
+
+/* line 102, scss/_footer-lite.scss */
+.ue-c-footer-lite__partners-ntt {
+  width: 100px;
+  height: 34px;
+}
+
+/* line 106, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-copyright {
+  margin-bottom: 1.5em;
+  padding: 0.75em;
+  border-top: 1px solid #f2f3f4;
+  border-bottom: 1px solid #f2f3f4;
+}
+
+@media all and (min-width: 480px) {
+  /* line 106, scss/_footer-lite.scss */
+  .ue-c-footer-lite__list-copyright {
+    border: 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* line 118, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative {
+  padding: 0.75em 0;
+  border-top: 1px solid #f2f3f4;
+  border-bottom: 1px solid #f2f3f4;
+  text-align: center;
+}
+
+/* line 123, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative li {
+  display: inline-block;
+}
+
+/* line 125, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative li:after {
+  content: "|";
+  margin: 0 10px;
+}
+
+/* line 130, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative li:last-of-type:after {
+  content: "";
+  margin: 0;
+}
+
+/* line 135, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative li a {
+  font-size: 13px;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+/* line 139, scss/_footer-lite.scss */
+.ue-c-footer-lite__list-corporative li a:hover {
+  color: #49a3db;
+}
+
+@media all and (min-width: 480px) {
+  /* line 145, scss/_footer-lite.scss */
+  .ue-c-footer-lite__container-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1em 0;
+    border-top: 1px solid #f2f3f4;
+  }
 }

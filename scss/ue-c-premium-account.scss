@@ -1,303 +1,360 @@
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
+@import "variables";
+@import "mixins";
+@import "fonts";
 
+@import "header-lite";
 
 .ue-c-premium-account {
-	
-	@include resetPremium();
+  @include resetPremium();
 
-	width: $max-width;
+  max-width: $max-width;
+  display: block;
+  margin: 0 auto;
+  font-family: $fontRegular;
+  font-size: 14px;
+  padding: 28px 14px;
+  box-sizing: border-box;
+
+  a {
+    color: #2a7aac;
+  }
+  .is-xxs {
+    font-size: 11px;
+  }
+  .is-xs {
+    font-size: 12px;
+  }
+  .is-s {
+    font-size: 14px;
+  }
+  .is-m {
+    font-size: 16px;
+  }
+  .is-l {
+    font-size: 20px;
+  }
+  .is-xl {
+    font-size: 26px;
+  }
+  .is-centered {
+    text-align: center;
     display: block;
-	margin: 0 auto;
-	font-family: $fontRegular;
-	font-size: 14px;
-	padding: 28px 14px;
-	box-sizing: border-box;
-	
-	a{
-		color:#2a7aac;
-	}
-	.is-xxs{
-		font-size: 11px;
-	}
-	.is-xs{
-		font-size: 12px;
-	}
-	.is-s{
-		font-size: 14px;
-	}
-	.is-m{
-		font-size: 16px;
-	}
-	.is-l{
-		font-size: 20px;
-	}
-	.is-xl{
-		font-size: 26px;
-	}
-	.is-centered{
-		text-align: center;
-		display: block;
-	}
-	.is-italic{
-		font-style: italic;
-	}
-	.is-active{
-		opacity:1;
-	}
-	.is-error{
-		display: flex;
-		align-items: center;
-		margin: 3px 0 0px 0px;
-		p{
-			color:$error;
-			font-size: 14px;
-			margin: 5px 0 5px 5px
-		}
-		svg{
-			fill: $error;
-			height: 20px;
-			width: 20px;
-		}
-	}
-	.is-hidden{
-		display: none;
-	}
-	&__header{
-		background-color: $color0;
-		height: 44px;
-		padding: 0 1rem;
-		border-bottom: 1px solid $color6;
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-		
-		@media all and (min-width: $mq1) {
-			justify-content: center;
-			width: 100%;
-			height: 60px;
-			padding: 0;
-		}
-	}
-	&__header-logo{
-		svg{
-			width: 150px;
-			@media all and (min-width: $mq1) {
-				width: 294px;
-			}
-		}
-	}
-	&__input{
-		position: relative;
-	}
-	&__input-password,
-	&__input-mail{
-		width: 100%;
-		height: 45px;
-		padding: 0 10px;
-		font-size: 16px;
-		color: #4e4e4e;
-		margin-bottom: 20px;
-		@media all and ( min-width: 800px ) {
-			font-size: 14px;
-		};
-	}
-	&__input-password{
-		margin-bottom: 0;
-	}
-	//
-	//evitar en safari el icono guardar llave de contactos
-	//
-	input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
-	input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
-		visibility: hidden;
-		display: none !important;
-		pointer-events: none;
-		height: 0;
-		width: 0;
-		margin: 0;
-	}
-	//
-	//
-	&__password-eye{
-		position: absolute;
-		right: 10px;
-		top: 50%;
-		transform: translateY(-50%);
-		cursor: pointer;
-		opacity: .3;
-		width: 20px;
-		height: 13px;
-	}
-	&__suscription{
-		border:transparent;
-		padding: 0;
-		margin: 20px 0;
-		label:first-of-type{
-			margin-right: 20px;
-		}
-	}
-	&__plan{
-		display: flex;
-		justify-content: space-between;
-		padding: 8px ;
-		margin: -8px;
-		background-color: $color5;
-		margin-bottom: 1rem;
-		p{
-			margin-bottom: 0;
-		}
-	}
-	&__plan-text & p{
-		margin-bottom: 0;
-	}
-	&__plan-button {
-		border:1px solid $color6;
-		border-radius: 5px;
-		cursor: pointer;
-		color: $color3;
-		background-color: transparent;
-		&:hover{
-			text-decoration: underline;
-			background-color: #fff;
-		}
-	}
-	&__account{
-		margin-bottom: 20px;
-	}
-	&__accept{
-		margin: 20px 0;
-	}
-	&__rrss {
-		display: flex;
-		justify-content: space-between;
-		margin-bottom: 1rem;
-	}
-	&__rrss-element{
-		transition: opacity .2s ease-out;
-		border: none;
-		padding: 0;
-		margin: 0;
-		background: transparent;
-		width: 48%;
-		max-width: 160px;
-		&:hover{
-			opacity: .7;
-			cursor: pointer;
-		}
-	}
-	&__button{
-		width: 100%;
-		background-color: $color3;
-		color: white;
-		border: none;
-		border-radius: 2px;
-		line-height: 40px;
-		margin-bottom: 10px;
-		&:hover{
-			background-color: $color4;
-			text-decoration: underline;
-			cursor: pointer;
-		}
-	}
-	&__bookmark{
-		text-align: center;
-		width: 100%;
-		position: relative;
-		margin: 10px auto;
-		&::after{
-			content: "";
-			width: 100%;
-			display: block; 
-			height: 1px;
-			background-color: $color1;
-			top: 10px;
-			position: absolute;
-			z-index: -1;
-		}
-		p{
-			font-size: 18px;
-			line-height: 18px;
-			background-color:white;
-			width: 40px;
-			height: 22px;
-			border-radius: 120px;
-			margin: 0 auto;
-			z-index: 1;
-		}
-	}
-	&__smalltext{
-		color: $color2;
-		padding: 10px 0;
-		border-top: 1px solid $color1;
-		border-bottom: 1px solid $color1;
-		margin: 30px 0;
-		p{
-			line-height: 13px;
-		}
-	}
-	&__paypal{
-		font-family: $fontMedium;
-		display: flex;
-		align-items: center;
-		border: 1px solid $color1;
-		border-radius:5px;
-		height: 56px;
-		padding: 0 16px;
-		justify-content: space-between;
-		margin: 15px 0 40px 0;
-		cursor: pointer;
-		&:hover{
-			background-color: $color1;
-		}
-	}
-	&__paypal-text{
-		display:flex;
-		align-items: center;
-		span{
-			margin-right: 8px;
-		}
-	}
+  }
+  .is-bottom{
+    margin-bottom: 2em;
+    display: block;
+  }
+  .is-italic {
+    font-style: italic;
+  }
+  .is-active {
+    opacity: 1;
+  }
+  .is-error,
+  .is-correct {
+    display: flex;
+    align-items: flex-start;
+    margin: 3px 0 0px 0px;
+    p {
+      color: $error01;
+      font-size: 14px;
+      margin: 0 0 5px 5px;
+    }
+    svg {
+      fill: $error01;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .is-correct {
+    p,
+    svg {
+      fill: black;
+      color: black;
+    }
+  }
+  .is-hidden {
+    display: none;
+  }
+  &__header {
+    background-color: $color0;
+    height: 44px;
+    padding: 0 1rem;
+    border-bottom: 1px solid $color6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-	&__card{
-		font-family: $fontMedium;
-		margin-bottom: 16px;
-	}
-	&__card-text{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	
-	&__message{
-		text-align: center;
-		p{
-			margin: 30px 0;
-		}
-		
-	}
-	&__container{
-		position: relative;
-	}
-	&__confirm{
-		display: flex;
-		margin: 20px 0;
-	}
-	&__confirm-input{
-		width: 20px;
-		height: 20px;
-		margin-right: 15px;
-	}
-	&__confirm-label{
-		margin: 0 0 0 5px;
-	}
-	&__help{
-		background-color:#f2f3f4;
-		padding: 10px 0;
-		p{
-			margin-bottom: 0;
-			line-height: 1.5rem;
-		}
-	}
+    @media all and (min-width: $mq1) {
+      justify-content: center;
+      width: 100%;
+      height: 60px;
+      padding: 0;
+    }
+  }
+  &__header-logo {
+    svg {
+      width: 150px;
+      @media all and (min-width: $mq1) {
+        width: 294px;
+      }
+    }
+  }
+  &__input {
+    position: relative;
+  }
+  &__input-password,
+  &__input-mail {
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #4e4e4e;
+    margin-bottom: 20px;
+    @media all and (min-width: 800px) {
+      font-size: 14px;
+    }
+  }
+  &__input-password {
+    margin-bottom: 0;
+  }
+  //
+  //evitar en safari el icono guardar llave de contactos
+  //
+  input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
+  input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
+  //
+  //
+  &__password-eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    opacity: 0.3;
+    width: 20px;
+    height: 13px;
+  }
+  &__suscription {
+    border: transparent;
+    padding: 0;
+    margin: 20px 0;
+    label:first-of-type {
+      margin-right: 20px;
+    }
+  }
+  &__plan {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: -8px;
+    background-color: $color5;
+    margin-bottom: 1rem;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__plan-text & p {
+    margin-bottom: 0;
+  }
+  &__plan-button {
+    border: 1px solid $color6;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $color3;
+    background-color: transparent;
+    &:hover {
+      text-decoration: underline;
+      background-color: #fff;
+    }
+  }
+  &__accept {
+    margin: 20px 0;
+  }
+  &__rrss {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &__rrss-element {
+    transition: opacity 0.2s ease-out;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    width: 48%;
+    max-width: 160px;
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+  &__button {
+    width: 100%;
+    background-color: $color3;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    &:hover {
+      background-color: $color4;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &__bookmark {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+    &::after {
+      content: "";
+      width: 100%;
+      display: block;
+      height: 1px;
+      background-color: $color1;
+      top: 10px;
+      position: absolute;
+      z-index: -1;
+    }
+    p {
+      font-size: 18px;
+      line-height: 18px;
+      background-color: white;
+      width: 40px;
+      height: 22px;
+      border-radius: 120px;
+      margin: 0 auto;
+      z-index: 1;
+    }
+  }
+  &__smalltext {
+    color: $color2;
+    padding: 10px 0;
+    border-top: 1px solid $color1;
+    border-bottom: 1px solid $color1;
+    margin: 0;
+    p {
+      line-height: 13px;
+    }
+  }
+  &__paypal {
+    font-family: $fontMedium;
+    display: flex;
+    align-items: center;
+    border: 1px solid $color1;
+    border-radius: 5px;
+    height: 56px;
+    padding: 0 16px;
+    justify-content: space-between;
+    margin: 15px 0 40px 0;
+    cursor: pointer;
+    &:hover {
+      background-color: $color1;
+    }
+  }
+  &__paypal-text {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 8px;
+    }
+  }
+
+  &__card {
+    font-family: $fontMedium;
+    margin-bottom: 16px;
+  }
+  &__card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__message {
+    text-align: center;
+  }
+  &__message-correct{
+    padding: 1em .5em;
+    color:$correcto01;
+    background-color: $correcto02;
+    margin-bottom: 2em;;
+  }
+  &__message-error{
+    padding: 1em .5em;
+    color:$error01;
+    background-color: $error02;
+    margin-bottom: 2em;;
+  }
+  &__container {
+    position: relative;
+  }
+  &__confirm {
+    display: flex;
+    margin: 20px 0;
+  }
+  &__confirm-input {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+  &__confirm-label {
+    margin: 0 0 0 5px;
+  }
+  &__help {
+    background-color: #edeef0;
+    padding: 10px 0;
+    p {
+      margin-bottom: 0;
+      line-height: 1.5rem;
+    }
+    span a {
+      color: black;
+      text-decoration: none;
+    }
+    a{
+      margin-bottom:0;
+    }
+  }
+  &__promotional-form {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #edeef0;
+  }
+  &__list {
+    margin: 1.5em 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list-element {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 1em;
+    margin-right: 0;
+    font-size: 13px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background-color: $color3;
+      border-radius: 120px;
+    }
+  }
+  &__spinner-text{
+    color: $color2;
+  }
 }
+
+@import "footer-lite";

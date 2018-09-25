@@ -163,8 +163,11 @@
       margin-bottom: 0;
     }
   }
-  &__plan-text & p {
-    margin-bottom: 0;
+  &__plan-list {
+    list-style: none;
+    font-weight: bolder;
+    margin:0;
+    padding: 0;
   }
   &__plan-button {
     border: 1px solid $color6;

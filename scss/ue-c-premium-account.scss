@@ -154,6 +154,7 @@
   &__plan {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px;
     margin: -8px;
     background-color: $color5;
@@ -171,6 +172,9 @@
     cursor: pointer;
     color: $color3;
     background-color: transparent;
+    height: 45px;
+    width: 130px;
+    margin: .5em;
     &:hover {
       text-decoration: underline;
       background-color: #fff;

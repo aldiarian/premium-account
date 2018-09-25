@@ -332,43 +332,49 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 8px;
   margin: -8px;
   background-color: #f2f3f4;
   margin-bottom: 1rem;
 }
 
-/* line 161, scss/ue-c-premium-account.scss */
+/* line 162, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan p {
   margin-bottom: 0;
 }
 
-/* line 165, scss/ue-c-premium-account.scss */
+/* line 166, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-text .ue-c-premium-account p {
   margin-bottom: 0;
 }
 
-/* line 168, scss/ue-c-premium-account.scss */
+/* line 169, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
   border: 1px solid #e2e2e2;
   border-radius: 5px;
   cursor: pointer;
   color: #2a7aac;
   background-color: transparent;
+  height: 45px;
+  width: 130px;
+  margin: .5em;
 }
 
-/* line 174, scss/ue-c-premium-account.scss */
+/* line 178, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button:hover {
   text-decoration: underline;
   background-color: #fff;
 }
 
-/* line 179, scss/ue-c-premium-account.scss */
+/* line 183, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 182, scss/ue-c-premium-account.scss */
+/* line 186, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -379,7 +385,7 @@
   margin-bottom: 1rem;
 }
 
-/* line 187, scss/ue-c-premium-account.scss */
+/* line 191, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
@@ -391,13 +397,13 @@
   max-width: 160px;
 }
 
-/* line 195, scss/ue-c-premium-account.scss */
+/* line 199, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-/* line 200, scss/ue-c-premium-account.scss */
+/* line 204, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button {
   width: 100%;
   background-color: #2a7aac;
@@ -408,14 +414,14 @@
   margin-bottom: 10px;
 }
 
-/* line 208, scss/ue-c-premium-account.scss */
+/* line 212, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button:hover {
   background-color: #226894;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 214, scss/ue-c-premium-account.scss */
+/* line 218, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
   width: 100%;
@@ -423,7 +429,7 @@
   margin: 10px auto;
 }
 
-/* line 219, scss/ue-c-premium-account.scss */
+/* line 223, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark::after {
   content: "";
   width: 100%;
@@ -435,7 +441,7 @@
   z-index: -1;
 }
 
-/* line 229, scss/ue-c-premium-account.scss */
+/* line 233, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark p {
   font-size: 18px;
   line-height: 18px;
@@ -447,7 +453,7 @@
   z-index: 1;
 }
 
-/* line 240, scss/ue-c-premium-account.scss */
+/* line 244, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext {
   color: #5d6d7e;
   padding: 10px 0;
@@ -456,12 +462,12 @@
   margin: 0;
 }
 
-/* line 246, scss/ue-c-premium-account.scss */
+/* line 250, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext p {
   line-height: 13px;
 }
 
-/* line 250, scss/ue-c-premium-account.scss */
+/* line 254, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal {
   font-family: "Roboto Medium";
   display: -webkit-box;
@@ -481,12 +487,12 @@
   cursor: pointer;
 }
 
-/* line 261, scss/ue-c-premium-account.scss */
+/* line 265, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal:hover {
   background-color: #e2e2e2;
 }
 
-/* line 265, scss/ue-c-premium-account.scss */
+/* line 269, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,18 +502,18 @@
   align-items: center;
 }
 
-/* line 268, scss/ue-c-premium-account.scss */
+/* line 272, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span {
   margin-right: 8px;
 }
 
-/* line 273, scss/ue-c-premium-account.scss */
+/* line 277, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card {
   font-family: "Roboto Medium";
   margin-bottom: 16px;
 }
 
-/* line 277, scss/ue-c-premium-account.scss */
+/* line 281, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,12 +526,12 @@
   align-items: center;
 }
 
-/* line 283, scss/ue-c-premium-account.scss */
+/* line 287, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message {
   text-align: center;
 }
 
-/* line 286, scss/ue-c-premium-account.scss */
+/* line 290, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-correct {
   padding: 1em .5em;
   color: #0b7542;
@@ -533,7 +539,7 @@
   margin-bottom: 2em;
 }
 
-/* line 292, scss/ue-c-premium-account.scss */
+/* line 296, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-error {
   padding: 1em .5em;
   color: #cc2714;
@@ -541,12 +547,12 @@
   margin-bottom: 2em;
 }
 
-/* line 298, scss/ue-c-premium-account.scss */
+/* line 302, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container {
   position: relative;
 }
 
-/* line 301, scss/ue-c-premium-account.scss */
+/* line 305, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,56 +560,56 @@
   margin: 20px 0;
 }
 
-/* line 305, scss/ue-c-premium-account.scss */
+/* line 309, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-input {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
 
-/* line 310, scss/ue-c-premium-account.scss */
+/* line 314, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
 }
 
-/* line 313, scss/ue-c-premium-account.scss */
+/* line 317, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
   background-color: #edeef0;
   padding: 10px 0;
 }
 
-/* line 316, scss/ue-c-premium-account.scss */
+/* line 320, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help p {
   margin-bottom: 0;
   line-height: 1.5rem;
 }
 
-/* line 320, scss/ue-c-premium-account.scss */
+/* line 324, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help span a {
   color: black;
   text-decoration: none;
 }
 
-/* line 324, scss/ue-c-premium-account.scss */
+/* line 328, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help a {
   margin-bottom: 0;
 }
 
-/* line 328, scss/ue-c-premium-account.scss */
+/* line 332, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-form {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid #edeef0;
 }
 
-/* line 333, scss/ue-c-premium-account.scss */
+/* line 337, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list {
   margin: 1.5em 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 338, scss/ue-c-premium-account.scss */
+/* line 342, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element {
   position: relative;
   padding-left: 16px;
@@ -612,7 +618,7 @@
   font-size: 13px;
 }
 
-/* line 344, scss/ue-c-premium-account.scss */
+/* line 348, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element::before {
   content: "";
   position: absolute;
@@ -624,7 +630,7 @@
   border-radius: 120px;
 }
 
-/* line 355, scss/ue-c-premium-account.scss */
+/* line 359, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-text {
   color: #5d6d7e;
 }

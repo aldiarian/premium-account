@@ -1,11 +1,10 @@
 @mixin resetPremium {
-	p{
-		font-size: 14px;
-		color: inherit;
-	}
 	a,
 	a:hover{
-		text-decoration: underline;
+		text-decoration: none;
+	}
+	p{
+		line-height: 1.3em;
 	}
 	input{
 		border: 1px solid $color1;
@@ -15,11 +14,6 @@
 	input[type="checkbox"],
 	input[type="checkbox"] + label{
 		cursor: pointer;
-	}
-	p,h1,h2,a{
-		margin:0;
-		margin-bottom:1rem;
-		font-family: $fontRegular;
 	}
 	input[type="radio"]{
 		appearance: radio;
@@ -37,4 +31,18 @@
 }
 
 
+@mixin maintitle{
+	font-size: 20px;
+	line-height: 1em;
+	font-family: $fontCond;
+	text-align: center;
+	color: black;
+  }
 
+@mixin links{
+	color: #2a7aac;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}

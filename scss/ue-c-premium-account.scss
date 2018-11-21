@@ -1,40 +1,23 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
-
 @import "header-lite";
+
+
 
 .ue-c-premium-account {
   @include resetPremium();
-
   max-width: $max-width;
   display: block;
-  margin: 0 auto;
-  font-family: $fontRegular;
-  font-size: 14px;
-  padding: 28px 14px;
   box-sizing: border-box;
+  padding: 28px 14px;
+  margin: 0 auto;
+  font-family: $fontCond;
+  font-size: 16px;
+ 
 
   a {
-    color: #2a7aac;
-  }
-  .is-xxs {
-    font-size: 11px;
-  }
-  .is-xs {
-    font-size: 12px;
-  }
-  .is-s {
-    font-size: 14px;
-  }
-  .is-m {
-    font-size: 16px;
-  }
-  .is-l {
-    font-size: 20px;
-  }
-  .is-xl {
-    font-size: 26px;
+    @include links;
   }
   .is-centered {
     text-align: center;
@@ -44,40 +27,18 @@
     margin-bottom: 2em;
     display: block;
   }
-  .is-italic {
-    font-style: italic;
+  .is-bold{
+    font-weight: bold;
   }
   .is-active {
     opacity: 1;
   }
-  .is-error,
-  .is-correct {
-    display: flex;
-    align-items: flex-start;
-    margin: 3px 0 0px 0px;
-    p {
-      color: $error01;
-      font-size: 14px;
-      margin: 0 0 5px 5px;
-    }
-    svg {
-      fill: $error01;
-      height: 20px;
-      width: 20px;
-    }
-  }
-  .is-correct {
-    p,
-    svg {
-      fill: black;
-      color: black;
-    }
-  }
+
   .is-hidden {
     display: none;
   }
   &__header {
-    background-color: $color0;
+    background-color: white;
     height: 44px;
     padding: 0 1rem;
     border-bottom: 1px solid $color6;
@@ -152,6 +113,8 @@
     }
   }
   &__plan {
+    font-family: $fontCond;
+    font-size: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -159,29 +122,37 @@
     margin: -8px;
     background-color: $color5;
     margin-bottom: 1rem;
-    p {
+    &-text {
       margin-bottom: 0;
     }
-  }
-  &__plan-list {
-    list-style: none;
-    font-weight: bolder;
-    margin:0;
-    padding: 0;
-  }
-  &__plan-button {
-    border: 1px solid $color6;
-    border-radius: 5px;
-    cursor: pointer;
-    color: $color3;
-    background-color: transparent;
-    height: 45px;
-    width: 130px;
-    margin: .5em;
-    &:hover {
-      text-decoration: underline;
-      background-color: #fff;
+    &-list {
+      list-style: none;
+      font-weight: bolder;
+      margin:0;
+      padding: 0;
     }
+    &-button {
+      font-size: 1em;
+      font-family: $fontCond;
+      padding: 0;
+      line-height: 1em;
+      color: $color3;
+      border: 1px solid $color6;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: transparent;
+      min-height: 37px;
+      min-width: 107px;
+      margin: .5em;
+      &:hover {
+        text-decoration: underline;
+        background-color: #fff;
+      }
+    }
+  }
+  &__icon{
+    width: 20px;
+    height: 20px;
   }
   &__accept {
     margin: 20px 0;
@@ -209,9 +180,10 @@
     background-color: $color3;
     color: white;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     line-height: 40px;
     margin-bottom: 10px;
+    font-size: 15px;
     &:hover {
       background-color: $color4;
       text-decoration: underline;
@@ -255,7 +227,8 @@
     }
   }
   &__paypal {
-    font-family: $fontMedium;
+    font-family: $fontRegular;
+    font-weight: bold;
     display: flex;
     align-items: center;
     border: 1px solid $color1;
@@ -278,7 +251,8 @@
   }
 
   &__card {
-    font-family: $fontMedium;
+    font-family: $fontRegular;
+    font-weight: bold;
     margin-bottom: 16px;
   }
   &__card-text {
@@ -289,18 +263,31 @@
 
   &__message {
     text-align: center;
-  }
-  &__message-correct{
-    padding: 1em .5em;
-    color:$correcto01;
-    background-color: $correcto02;
-    margin-bottom: 2em;;
-  }
-  &__message-error{
-    padding: 1em .5em;
-    color:$error01;
-    background-color: $error02;
-    margin-bottom: 2em;;
+    &-maintitle{
+      @include maintitle;
+    }
+    
+    &-title{
+      font-size: 17px;
+      margin: 0 0 .5em 0;
+    }
+    &-text{
+      font-size: 14px;
+      font-family: $fontRegular;
+    }
+    &-correct{
+      padding: 1em .5em;
+      color: $correctText;
+      background-color: $correct;
+      margin-bottom: 2em;
+      border:1px solid $correct2;
+    }
+    &-error{
+      padding: 1em .5em;
+      color:$errorText;
+      background-color: $error;
+      margin-bottom: 2em;;
+    }
   }
   &__container {
     position: relative;
@@ -318,11 +305,17 @@
     margin: 0 0 0 5px;
   }
   &__help {
+    text-align: center;
     background-color: #edeef0;
     padding: 10px 0;
-    p {
-      margin-bottom: 0;
+    font-family: $fontCond;
+    &-text{
+      font-weight: bold;
+      margin: 0;
       line-height: 1.5rem;
+    }
+    &-link{
+      @include links;
     }
     span a {
       color: black;
@@ -332,35 +325,103 @@
       margin-bottom:0;
     }
   }
-  &__promotional-form {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: 1px solid #edeef0;
+  &__promotional{
+    &-maintitle{
+      @include maintitle
+    }
+    &-main { 
+      margin-bottom: 1em;
+      p{
+        font-family: $fontCond;
+        margin: 0;
+      }
+      span{
+        font-weight: bold;
+      }
+
+    }
+    &-text{
+      font-family: $fontCond;
+      font-weight: normal;
+      font-size:17px;
+      color:$colorlink;
+      a{
+        font-weight: bold;
+        @include links;
+      }
+    }
+    &-form {
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #edeef0;
+    }
+    &__error,
+    &__correct {
+      display: flex;
+      align-items: flex-start;
+      margin: 3px 0 0px 0px;
+      p {
+        color: $errorText;
+        font-size: 14px;
+        margin: 0 0 5px 5px;
+      }
+      svg {
+        fill: $errorText;
+        height: 20px;
+        width: 20px;
+      }
+    }
+    &__correct {
+      p,
+      svg {
+        fill: black;
+        color: black;
+      }
+    }
   }
   &__list {
     margin: 1.5em 0;
     padding: 0;
     list-style: none;
-  }
-  &__list-element {
-    position: relative;
-    padding-left: 16px;
-    margin-bottom: 1em;
-    margin-right: 0;
-    font-size: 13px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      left: 0;
-      width: 8px;
-      height: 8px;
-      background-color: $color3;
-      border-radius: 120px;
+    &-element {
+      font-family: $fontRegular;
+      position: relative;
+      padding-left: 12px;
+      margin: 0;
+      margin-bottom: 0.6em;
+      font-size: 14px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background-color: $color3;
+        border-radius: 120px;
+      }
+    }
+    &-link{
+      @include links;
     }
   }
-  &__spinner-text{
-    color: $color2;
+  &__spinner{
+    &-block{
+      display: flex;
+      align-items: center;
+
+    }
+    &-title{
+      font-family: $fontCond;
+      font-size: 20px;
+    }
+    &-text{
+      color: $colorbase;
+      font-family: $fontRegular;
+      font-weight: bold;
+      font-size: 17px;
+      text-align: left;
+    }
   }
 }
 

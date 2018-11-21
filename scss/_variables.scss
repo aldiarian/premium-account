@@ -1,9 +1,9 @@
-
 $mq1: 480px;
-$max-width: 342px;
-$fontRegular: "Roboto Regular";
-$fontMedium: "Roboto Medium";
+$max-width: 360px;
+$fontRegular: "Roboto";
+$fontCond: "Roboto Condensed";
 $font-footer: "Clear Sans", Arial, sans-serif, helvetica;
+
 $color0: #fff;
 $color1: #e2e2e2;
 $color2: #5d6d7e;
@@ -12,9 +12,13 @@ $color4: #226894;
 $color5: #f2f3f4;
 $color6 :#e2e2e2;
 
-$error01: #cc2714;
-$error02: #f9e6e6;
+$colorbase:#597897;
+$colorlink:#2e6d9d;
 
-$correcto01: #0b7542;
-$correcto02: #eaffe7;
+$error: #f6eced;
+$errorText: #c62514;
+
+$correct: #d9ead7;
+$correct2: #bcd7b8;
+$correctText:#0b7542;
 

@@ -1,0 +1,38 @@
+{{!-- /////////////esto no va en el código final/////////////////// --}}
+<h3 class="separador">Código propocional</h3>
+{{!-- /////////////esto no va en el código final/////////////////// --}}
+
+<div class="ue-c-premium-account">
+	<div class="ue-c-premium-account__promotional ">
+		<h2 class="ue-c-premium-account__promotional-maintitle">Canjea tu código promocional</h2>
+		<div class="ue-c-premium-account__promotional-main ">
+			<p>Antes: <span>7,99€/mes</span></p>
+			<p>Con descuento del 30%: <span>6€/mes</span></p>
+		</div>
+		<form id="promotional-code-form" class="ue-c-premium-account__promotional-form">
+			<label for="promotional-code">Código promocional</label>
+			<span class="ue-c-premium-account__promotional__error">
+				{{> error}}
+				<p>Código caducado. Por favor, introduce un código válido</p>
+			</span>
+			<span class="ue-c-premium-account__promotional__error">
+				{{> error}}
+				<p>Código incorrecto. Por favor, introduce un código válido</p>
+			</span>
+			<span class="ue-c-premium-account__promotional__error">
+				{{> error}}
+				<p>Código utilizado. Por favor, introduce un código válido</p>
+			</span>
+			<input type="text" id="promotional-code" name="code-promotional" class="ue-c-premium-account__input-mail">
+			<button class="ue-c-premium-account__button" form="promotional-code-form" type="submit">Canjear código y continuar</button>
+		</form>
+		<h3 class="ue-c-premium-account__promotional-text">Disfruta de ventajas de ser Premium en El Mundo <a href="">con descuento</a></h3>
+		<ul class="ue-c-premium-account__list ">
+			<li class="ue-c-premium-account__list-element">Sin permanencia: <a class="ue-c-premium-account__list-link" href="http://">Cancela cuando quieras</a></li>
+			<li class="ue-c-premium-account__list-element">Accede a contenido ilimitado de elmundo.es</li>
+			<li class="ue-c-premium-account__list-element">Accede a todas las ventajas del club</li>
+			<li class="ue-c-premium-account__list-element">Disfruta de Premium también en la app</li>
+		</ul>
+		{{> premium-log-help }}
+	</div>
+</div>

@@ -1,37 +1,49 @@
 @font-face {
 	font-family: "Clear Sans";
-	src: url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.eot");
-	src: url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.eot?#iefix")
-		format("embedded-opentype"),
-	  url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff2")
-		format("woff2"),
-	  url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff")
-		format("woff"),
-	  url("http://e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.ttf")
-		format("ttf");
+	src: 	url("//e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.eot?") format("eot"),
+	  		url("//e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff2") format("woff2"),
+	  		url("//e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.woff") format("woff"),
+	  		url("//e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.ttf") format("truetype"),
+	  		url("//e00-elmundo.uecdn.es/fonts/clearWeb/ClearSans-Regular-webfont.svg#Regular") format("svg");
+  }
+  
+	@font-face {
+		font-family: "Roboto";
+		font-weight: normal;
+		src: 	url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?")format("eot"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff") format("woff"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf") format("truetype"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.svg#Regular") format("svg");
   }
   
   @font-face {
-	font-family: "Roboto Regular";
-	src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot")
-	  format("eot");
-	src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.eot?#iefix")
-		format("embedded-opentype"),
-	  url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.woff")
-		format("woff"),
-	  url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Regular.ttf")
-		format("ttf");
+		font-family: "Roboto";
+		font-weight: bold;
+		src: 	url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?")format("eot"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff2") format("woff2"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("truetype"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.svg#Medium") format("svg");
   }
   
-  @font-face {
-	font-family: "Roboto Medium";
-	src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot")
-	  format("eot");
-	src: url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?#iefix")
-		format("embedded-opentype"),
-	  url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff")
-		format("woff"),
-	  url("http://e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf")
-		format("ttf");
-  }
-  
+	@font-face {
+		font-family: "Roboto Condensed";
+		font-weight: normal;
+		src: 	url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Regular.eot?") format("eot"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Regular.woff2") format("woff2"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Regular.woff") format("woff"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Regular.ttf") format("truetype"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Regular.svg#Roboto") format("svg");
+	}
+	
+	@font-face {
+		font-family: "Roboto Condensed";
+		font-weight: bold;
+		src: 	url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Bold.eot?") format("eot"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Bold.woff2") format("woff2"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Bold.woff") format("woff"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Bold.ttf") format("truetype"),
+					url("//e00-elmundo.uecdn.es/fonts/roboto/RobotoCondensed-Bold.svg#Roboto") format("svg");
+	}
+	

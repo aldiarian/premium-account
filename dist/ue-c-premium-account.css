@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Roboto";
   font-weight: bold;
-  src: url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.eot?") format("eot"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.woff") format("woff"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.ttf") format("truetype"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Medium.svg#Medium") format("svg");
+  src: url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Black.eot?") format("eot"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Black.woff2") format("woff2"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Black.woff") format("woff"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Black.ttf") format("truetype"), url("//e00-elmundo.uecdn.es/fonts/roboto/Roboto-Black.svg#Medium") format("svg");
 }
 
 @font-face {
@@ -124,7 +124,7 @@
   border-radius: 0;
 }
 
-/* line 19, scss/ue-c-premium-account.scss */
+/* line 17, scss/ue-c-premium-account.scss */
 .ue-c-premium-account a {
   color: #2a7aac;
   text-decoration: none;
@@ -135,34 +135,28 @@
   text-decoration: underline;
 }
 
-/* line 22, scss/ue-c-premium-account.scss */
+/* line 20, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-centered {
   text-align: center;
   display: block;
 }
 
-/* line 26, scss/ue-c-premium-account.scss */
-.ue-c-premium-account .is-bottom {
-  margin-bottom: 2em;
-  display: block;
-}
-
-/* line 30, scss/ue-c-premium-account.scss */
+/* line 24, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-bold {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
-/* line 33, scss/ue-c-premium-account.scss */
+/* line 27, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-active {
   opacity: 1;
 }
 
-/* line 37, scss/ue-c-premium-account.scss */
+/* line 30, scss/ue-c-premium-account.scss */
 .ue-c-premium-account .is-hidden {
   display: none;
 }
 
-/* line 40, scss/ue-c-premium-account.scss */
+/* line 33, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__header {
   background-color: white;
   height: 44px;
@@ -180,7 +174,7 @@
 }
 
 @media all and (min-width: 480px) {
-  /* line 40, scss/ue-c-premium-account.scss */
+  /* line 33, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -191,24 +185,24 @@
   }
 }
 
-/* line 57, scss/ue-c-premium-account.scss */
+/* line 50, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__header-logo svg {
   width: 150px;
 }
 
 @media all and (min-width: 480px) {
-  /* line 57, scss/ue-c-premium-account.scss */
+  /* line 50, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__header-logo svg {
     width: 294px;
   }
 }
 
-/* line 64, scss/ue-c-premium-account.scss */
+/* line 57, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input {
   position: relative;
 }
 
-/* line 67, scss/ue-c-premium-account.scss */
+/* line 60, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -221,18 +215,18 @@
 }
 
 @media all and (min-width: 800px) {
-  /* line 67, scss/ue-c-premium-account.scss */
+  /* line 60, scss/ue-c-premium-account.scss */
   .ue-c-premium-account__input-password, .ue-c-premium-account__input-mail {
     font-size: 14px;
   }
 }
 
-/* line 80, scss/ue-c-premium-account.scss */
+/* line 73, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__input-password {
   margin-bottom: 0;
 }
 
-/* line 86, scss/ue-c-premium-account.scss */
+/* line 79, scss/ue-c-premium-account.scss */
 .ue-c-premium-account input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
 .ue-c-premium-account input[autocomplete="off"]::-webkit-credentials-auto-fill-button {
   visibility: hidden;
@@ -243,7 +237,7 @@
   margin: 0;
 }
 
-/* line 97, scss/ue-c-premium-account.scss */
+/* line 90, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__password-eye {
   position: absolute;
   right: 10px;
@@ -256,19 +250,19 @@
   height: 13px;
 }
 
-/* line 107, scss/ue-c-premium-account.scss */
+/* line 100, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription {
   border: transparent;
   padding: 0;
   margin: 20px 0;
 }
 
-/* line 111, scss/ue-c-premium-account.scss */
+/* line 104, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__suscription label:first-of-type {
   margin-right: 20px;
 }
 
-/* line 115, scss/ue-c-premium-account.scss */
+/* line 108, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan {
   font-family: "Roboto Condensed";
   font-size: 1em;
@@ -285,14 +279,15 @@
   margin: -8px;
   background-color: #f2f3f4;
   margin-bottom: 1rem;
+  font-size: 14px;
 }
 
-/* line 125, scss/ue-c-premium-account.scss */
+/* line 119, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-text {
-  margin-bottom: 0;
+  margin: 0;
 }
 
-/* line 128, scss/ue-c-premium-account.scss */
+/* line 122, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-list {
   list-style: none;
   font-weight: bolder;
@@ -300,9 +295,9 @@
   padding: 0;
 }
 
-/* line 134, scss/ue-c-premium-account.scss */
+/* line 128, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
-  font-size: 1em;
+  font-size: 16px;
   font-family: "Roboto Condensed";
   padding: 0;
   line-height: 1em;
@@ -316,24 +311,24 @@
   margin: .5em;
 }
 
-/* line 147, scss/ue-c-premium-account.scss */
+/* line 141, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button:hover {
   text-decoration: underline;
   background-color: #fff;
 }
 
-/* line 153, scss/ue-c-premium-account.scss */
+/* line 147, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__icon {
   width: 20px;
   height: 20px;
 }
 
-/* line 157, scss/ue-c-premium-account.scss */
+/* line 151, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 160, scss/ue-c-premium-account.scss */
+/* line 154, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,7 +339,7 @@
   margin-bottom: 1rem;
 }
 
-/* line 165, scss/ue-c-premium-account.scss */
+/* line 159, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
@@ -356,13 +351,13 @@
   max-width: 160px;
 }
 
-/* line 173, scss/ue-c-premium-account.scss */
+/* line 167, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-/* line 178, scss/ue-c-premium-account.scss */
+/* line 172, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button {
   width: 100%;
   background-color: #2a7aac;
@@ -374,14 +369,14 @@
   font-size: 15px;
 }
 
-/* line 187, scss/ue-c-premium-account.scss */
+/* line 181, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button:hover {
   background-color: #226894;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 193, scss/ue-c-premium-account.scss */
+/* line 187, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
   width: 100%;
@@ -389,7 +384,7 @@
   margin: 10px auto;
 }
 
-/* line 198, scss/ue-c-premium-account.scss */
+/* line 192, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark::after {
   content: "";
   width: 100%;
@@ -401,7 +396,7 @@
   z-index: -1;
 }
 
-/* line 208, scss/ue-c-premium-account.scss */
+/* line 202, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark p {
   font-size: 18px;
   line-height: 18px;
@@ -413,7 +408,7 @@
   z-index: 1;
 }
 
-/* line 219, scss/ue-c-premium-account.scss */
+/* line 213, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext {
   color: #5d6d7e;
   padding: 10px 0;
@@ -422,12 +417,12 @@
   margin: 0;
 }
 
-/* line 225, scss/ue-c-premium-account.scss */
+/* line 219, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext p {
   line-height: 13px;
 }
 
-/* line 229, scss/ue-c-premium-account.scss */
+/* line 223, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal {
   font-family: "Roboto";
   font-weight: bold;
@@ -438,22 +433,22 @@
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #e2e2e2;
-  border-radius: 5px;
-  height: 56px;
-  padding: 0 16px;
+  border-radius: 2px;
+  height: 44px;
+  padding: 0 8px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 15px 0 40px 0;
+  margin: 15px 0 20px 0;
   cursor: pointer;
 }
 
-/* line 241, scss/ue-c-premium-account.scss */
+/* line 235, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal:hover {
   background-color: #e2e2e2;
 }
 
-/* line 245, scss/ue-c-premium-account.scss */
+/* line 239, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,19 +458,21 @@
   align-items: center;
 }
 
-/* line 248, scss/ue-c-premium-account.scss */
+/* line 242, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span {
   margin-right: 8px;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
 }
 
-/* line 253, scss/ue-c-premium-account.scss */
+/* line 249, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card {
   font-family: "Roboto";
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* line 258, scss/ue-c-premium-account.scss */
+/* line 254, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,14 +483,22 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
 }
 
-/* line 264, scss/ue-c-premium-account.scss */
+/* line 261, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__accept {
+  font-family: "Roboto";
+  font-size: 15px;
+}
+
+/* line 266, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message {
   text-align: center;
 }
 
-/* line 266, scss/ue-c-premium-account.scss */
+/* line 268, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-maintitle {
   font-size: 20px;
   line-height: 1em;
@@ -502,19 +507,24 @@
   color: black;
 }
 
-/* line 270, scss/ue-c-premium-account.scss */
+/* line 272, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-title {
   font-size: 17px;
   margin: 0 0 .5em 0;
 }
 
-/* line 274, scss/ue-c-premium-account.scss */
+/* line 276, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-text {
   font-size: 14px;
   font-family: "Roboto";
 }
 
-/* line 278, scss/ue-c-premium-account.scss */
+/* line 279, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-text a, .ue-c-premium-account__message-text span {
+  font-weight: bolder;
+}
+
+/* line 283, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-correct {
   padding: 1em .5em;
   color: #0b7542;
@@ -523,7 +533,7 @@
   border: 1px solid #bcd7b8;
 }
 
-/* line 285, scss/ue-c-premium-account.scss */
+/* line 290, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-error {
   padding: 1em .5em;
   color: #c62514;
@@ -531,12 +541,58 @@
   margin-bottom: 2em;
 }
 
-/* line 292, scss/ue-c-premium-account.scss */
+/* line 296, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-download {
+  margin-bottom: 1em;
+  display: block;
+  color: red;
+}
+
+/* line 301, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 306, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-block {
+  background-color: #c3d5e5;
+  border-radius: 4px;
+  width: 45%;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+/* line 314, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-block p {
+  margin: 0;
+}
+
+/* line 318, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message-price {
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+/* line 323, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__message button {
+  width: 85%;
+  margin: 10px;
+}
+
+/* line 328, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container {
   position: relative;
 }
 
-/* line 295, scss/ue-c-premium-account.scss */
+/* line 331, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,19 +600,19 @@
   margin: 20px 0;
 }
 
-/* line 299, scss/ue-c-premium-account.scss */
+/* line 335, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-input {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
 
-/* line 304, scss/ue-c-premium-account.scss */
+/* line 340, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
 }
 
-/* line 307, scss/ue-c-premium-account.scss */
+/* line 343, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
   text-align: center;
   background-color: #edeef0;
@@ -564,14 +620,14 @@
   font-family: "Roboto Condensed";
 }
 
-/* line 312, scss/ue-c-premium-account.scss */
+/* line 348, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help-text {
   font-weight: bold;
   margin: 0;
   line-height: 1.5rem;
 }
 
-/* line 317, scss/ue-c-premium-account.scss */
+/* line 353, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help-link {
   color: #2a7aac;
   text-decoration: none;
@@ -582,18 +638,18 @@
   text-decoration: underline;
 }
 
-/* line 320, scss/ue-c-premium-account.scss */
+/* line 356, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help span a {
   color: black;
   text-decoration: none;
 }
 
-/* line 324, scss/ue-c-premium-account.scss */
+/* line 360, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help a {
   margin-bottom: 0;
 }
 
-/* line 329, scss/ue-c-premium-account.scss */
+/* line 365, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-maintitle {
   font-size: 20px;
   line-height: 1em;
@@ -602,50 +658,76 @@
   color: black;
 }
 
-/* line 332, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__promotional-main {
+/* line 368, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-maintext {
   margin-bottom: 1em;
 }
 
-/* line 334, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__promotional-main p {
+/* line 370, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-maintext p {
   font-family: "Roboto Condensed";
   margin: 0;
 }
 
-/* line 338, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__promotional-main span {
+/* line 374, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-maintext span {
   font-weight: bold;
 }
 
-/* line 343, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__promotional-text {
+/* line 378, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-oldprice {
+  position: relative;
+}
+
+/* line 380, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-oldprice::before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+}
+
+/* line 389, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-newprice {
+  color: #0b7542;
+}
+
+/* line 392, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-textlink {
   font-family: "Roboto Condensed";
   font-weight: normal;
   font-size: 17px;
   color: #2e6d9d;
 }
 
-/* line 348, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__promotional-text a {
+/* line 397, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-textlink a {
   font-weight: bold;
   color: #2a7aac;
   text-decoration: none;
 }
 
 /* line 45, scss/_mixins.scss */
-.ue-c-premium-account__promotional-text a:hover {
+.ue-c-premium-account__promotional-textlink a:hover {
   text-decoration: underline;
 }
 
-/* line 353, scss/ue-c-premium-account.scss */
+/* line 402, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-form {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid #edeef0;
 }
 
-/* line 358, scss/ue-c-premium-account.scss */
+/* line 406, scss/ue-c-premium-account.scss */
+.ue-c-premium-account__promotional-form label {
+  font-family: "Roboto";
+  font-size: 14px;
+}
+
+/* line 411, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error, .ue-c-premium-account__promotional__correct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,35 +738,35 @@
   margin: 3px 0 0px 0px;
 }
 
-/* line 363, scss/ue-c-premium-account.scss */
+/* line 416, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error p, .ue-c-premium-account__promotional__correct p {
   color: #c62514;
   font-size: 14px;
   margin: 0 0 5px 5px;
 }
 
-/* line 368, scss/ue-c-premium-account.scss */
+/* line 421, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error svg, .ue-c-premium-account__promotional__correct svg {
   fill: #c62514;
   height: 20px;
   width: 20px;
 }
 
-/* line 375, scss/ue-c-premium-account.scss */
+/* line 428, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__correct p,
 .ue-c-premium-account__promotional__correct svg {
   fill: black;
   color: black;
 }
 
-/* line 382, scss/ue-c-premium-account.scss */
+/* line 435, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list {
   margin: 1.5em 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 386, scss/ue-c-premium-account.scss */
+/* line 439, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element {
   font-family: "Roboto";
   position: relative;
@@ -694,7 +776,7 @@
   font-size: 14px;
 }
 
-/* line 393, scss/ue-c-premium-account.scss */
+/* line 446, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element::before {
   content: "";
   position: absolute;
@@ -706,7 +788,7 @@
   border-radius: 120px;
 }
 
-/* line 404, scss/ue-c-premium-account.scss */
+/* line 457, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-link {
   color: #2a7aac;
   text-decoration: none;
@@ -717,7 +799,7 @@
   text-decoration: underline;
 }
 
-/* line 409, scss/ue-c-premium-account.scss */
+/* line 462, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,13 +809,13 @@
   align-items: center;
 }
 
-/* line 414, scss/ue-c-premium-account.scss */
+/* line 467, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-title {
   font-family: "Roboto Condensed";
   font-size: 20px;
 }
 
-/* line 418, scss/ue-c-premium-account.scss */
+/* line 471, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-text {
   color: #597897;
   font-family: "Roboto";

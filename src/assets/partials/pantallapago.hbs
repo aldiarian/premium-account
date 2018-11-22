@@ -4,29 +4,17 @@
 <div class="ue-c-premium-account">
 
 	<div class="ue-c-premium-account__container">
-
-		<div class="ue-c-premium-account__plan ">
-			<p class="ue-c-premium-account__plan-text is-s">Has seleccionado:
-				<br>
-				<strong>Plan anual de 90 €</strong>
-			</p>
-			<button type="button" class="ue-c-premium-account__plan-button is-s" href="">cambiar plan</button>
-		</div>
+		{{>plan}}
 		<div class="ue-c-premium-account__step">
-			<p class="ue-c-premium-account__steps is-s">Paso
+			<p class="ue-c-premium-account__steps">Paso
 				<strong>2</strong> de 2 -
 				<strong>Selecciona método de pago</strong>
-			</p>
-		</div>
-		<div class="ue-c-premium-account__account ">
-			<p class="">¿Ya tienes una cuenta?
-				<a href="">Inicia sesión</a>
 			</p>
 		</div>
 
 	</div>
 
-	<div class="ue-c-premium-account__paypal is-l">
+	<div class="ue-c-premium-account__paypal">
 		<div class="ue-c-premium-account__paypal-text" title="pago con paypal">
 			<span>Pago con</span>
 			<svg role="img" aria-labelledby="title" xmlns="http://www.w3.org/2000/svg" class="icon-paypal" width="97" height="24">
@@ -46,10 +34,10 @@
 			</svg>
 		</div>
 		<svg xmlns="http://www.w3.org/2000/svg" class="icon-right" width="10" height="16" aria-hidden="true">
-			<path d="M1.91 15.959L.53 14.587 7.157 8 .53 1.413 1.91.041 9.917 8z" />
+			<path fill="#2e6d9d" d="M1.91 15.959L.53 14.587 7.157 8 .53 1.413 1.91.041 9.917 8z" />
 		</svg>
 	</div>
-	<div class="ue-c-premium-account__card is-l">
+	<div class="ue-c-premium-account__card ">
 		<div class="ue-c-premium-account__card-text">
 			<span>Pago con tarjeta</span>
 			<svg role="img" aria-labelledby="title" xmlns="http://www.w3.org/2000/svg" class="icon-tarjeta-american" width="38" height="26">
@@ -103,7 +91,7 @@
 			</svg>
 		</div>
 	</div>
-	<p>Al realizar el pago declaras aceptar los términos y condiciones legales.</p>
+	<p class="ue-c-premium-account__accept">Al realizar el pago declaras aceptar los <a href="http://">términos y condiciones legales</a> .</p>
 
 
 	<iframe src="iframe.html" frameborder="0" style="width: 100%;height: 320px;" ></iframe>

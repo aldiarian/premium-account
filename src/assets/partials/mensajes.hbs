@@ -1,5 +1,5 @@
 {{!-- /////////////esto no va en el código final/////////////////// --}}
-<h3 class="separador">Mensajes</h3>
+<h3 class="separador">Pantalla - mensajes</h3>
 {{!-- /////////////esto no va en el código final/////////////////// --}}
 
 {{!-- CORRECTO --}}
@@ -23,7 +23,7 @@
 				</span>. Revisa tu bandeja de entrada, te hemos mandado un mail con todos los detalles de tu compra
 			</p>
 		</div>
-		<a class="is-m is-bottom" href="http://">Descargar justificante de compra</a>
+		<a class="ue-c-premium-account__message-download" href="http://">Descargar justificante de compra</a>
 		<button class="ue-c-premium-account__button" type="button">Continuar leyendo</button>
 	</div>
 </div>
@@ -45,7 +45,7 @@
 				Has pagado un total de <span class="is-bold">7,99€</span> y ya puedes disfrutar de todos los contenidos y ventajas de Premium. Recuerda que tu suscripción se renovará automaticamente. Revisa tu bandeja de entrada, te hemos enviado un email con todos los detalles de tu compra.
 			</p>
 		</div>
-		<a class="is-m is-bottom" href="http://">Descargar justificante de compra</a>
+		<a class="ue-c-premium-account__message-download" href="http://">Descargar justificante de compra</a>
 		<button class="ue-c-premium-account__button" type="button">Continuar leyendo</button>
 	</div>
 </div>
@@ -67,10 +67,36 @@
 				Has pagado un total de <span class="is-bold">90€</span> y ya puedes disfrutar de todos los contenidos y ventajas de Premium. Recuerda que tu suscripción se renovará automaticamente. Revisa tu bandeja de entrada, te hemos enviado un email con todos los detalles de tu compra.
 			</p>
 		</div>
-		<a class="is-m is-bottom" href="http://">Descargar justificante de compra</a>
+		<a class="ue-c-premium-account__message-download" href="http://">Descargar justificante de compra</a>
 		<button class="ue-c-premium-account__button" type="button">Continuar leyendo</button>
 	</div>
 </div>
+
+<div class="ue-c-premium-account">
+	<div class="ue-c-premium-account__message is-centered">
+		<h2 class="ue-c-premium-account__message-maintitle">¡Te has suscrito correctamente!</h2>
+		<div class="ue-c-premium-account__message-correct">
+			{{>icon_ok}}
+
+			<h2 class="ue-c-premium-account__message-title">
+				¡Pago completado!<br>¡Enhorabuena!
+			</h2>
+			<p class="ue-c-premium-account__message-text">
+				Te confirmamos que has adquirido con éxito un pase mensual con descuento a <span class="is-bold">El Mundo Premium</span>. 
+			</p>
+			<p class="ue-c-premium-account__message-text">
+				Has pagado un total de <span class="is-bold">6€ (promoción activa durante los 3 primeros meses luego pagarás 7,99€)</span>.
+			</p>
+			<p class="ue-c-premium-account__message-text">
+				Ya puedes disfrutar de todos los contenidos y ventajas de Premium. Recuerda que tu suscripción se renovará automaticamente. Revisa tu bandeja de entrada, te hemos enviado un email con todos los detalles de tu compra.
+			</p>
+		</div>
+		<a class="ue-c-premium-account__message-download" href="http://">Descargar justificante de compra</a>
+		<button class="ue-c-premium-account__button" type="button">Continuar leyendo</button>
+	</div>
+</div>
+
+
 
 <div class="ue-c-premium-account">
 	<div class="ue-c-premium-account__message is-centered">
@@ -92,7 +118,7 @@
 				por un total de <span class="is-bold">90€</span>.
 			</p>
 		</div>
-		<a class="is-m is-bottom" href="http://">Descargar justificante de compra</a>
+		<a class="ue-c-premium-account__message-download" href="http://">Descargar justificante de compra</a>
 		<button class="ue-c-premium-account__button" type="button">Continuar leyendo</button>
 	</div>
 </div>
@@ -183,5 +209,24 @@
 			todos los datos en tu área de perfil o bien acudir a
 			<a href="https://elmundo.custhelp.com/">nuestra área de preguntas frecuentes</a> para resolver cualquier duda sobre Premium</p>
 		<button class="ue-c-premium-account__button" type="button">Aceptar y regresar</button>
+	</div>
+</div>
+
+<div class="ue-c-premium-account">
+	<div class="ue-c-premium-account__message is-centered">
+		<p class="ue-c-premium-account__message-text">Vas a contratar una suscripción a un <a href="http://">plan diario 24 horas por 0,99€</a></p> 
+		<p class="ue-c-premium-account__message-text"> <span>Si quieres contratar otro plan,</span> puedes elegir entre los que se muestran</p> 
+		<section class="ue-c-premium-account__message-blocks">
+			<div class="ue-c-premium-account__message-block">
+				<p>Mensual</p>
+				<span class="ue-c-premium-account__message-price">7,99€</span>
+				<button type="button" class="ue-c-premium-account__button">Escoger</button>
+			</div>
+			<div class="ue-c-premium-account__message-block">
+				<p>Anual</p>
+				<span class="ue-c-premium-account__message-price">90€</span>
+				<button type="button" class="ue-c-premium-account__button">Escoger</button>
+			</div>
+		</section>
 	</div>
 </div>

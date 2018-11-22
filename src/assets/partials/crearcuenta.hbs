@@ -1,21 +1,11 @@
  {{!-- /////////////esto no va en el código final/////////////////// --}}
-<h3 class="separador">Creación de cuenta</h3>
+<h3 class="separador">Pantalla - crea tu cuenta</h3>
 {{!-- /////////////esto no va en el código final/////////////////// --}}
 <div class="ue-c-premium-account">
 
 	<div class="ue-c-premium-account__container">
 
-		<div class="ue-c-premium-account__plan ">
-			<div>
-				<p class="ue-c-premium-account__plan-text">Has seleccionado:</p>
-				<ul class="ue-c-premium-account__plan-list">
-					<li>Adfree elmundo.es mensual 0.77€</li>
-					<li>Adfree elmundo.es mensual 0.77€</li>
-					<li>Adfree elmundo.es mensual 0.77€</li>
-				</ul>
-			</div>
-			<button type="button" class="ue-c-premium-account__plan-button " href="">Cambiar plan</button>
-		</div>
+		{{>plan}}
 		<div class="ue-c-premium-account__step">
 			<p class="ue-c-premium-account__steps ">Paso
 				<strong>1</strong> de 2 -
@@ -40,16 +30,7 @@
 		<h2 class="is-centered">Crea tu cuenta</h2>
 
 		<div class="ue-c-premium-account__message-error is-centered">
-			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-				<g fill="none" fill-rule="evenodd">
-					<circle cx="10" cy="10" r="10" fill="#CC2714" />
-					<g fill="#FFF">
-						<path d="M6.111 5L5 6.111 13.889 15 15 13.889z" />
-						<path d="M13.889 5L5 13.889 6.111 15 15 6.111z" />
-					</g>
-				</g>
-			</svg>
-
+			{{>icon_fails}}
 			<p class="">Ya existe una cuenta con este correo electrónico en Unidad Editorial. Por favor, <a href="http://">inicia sesión</a> para acceder. Gracias</p>
 		</div>
 
@@ -134,7 +115,7 @@
 
 			<fieldset class="ue-c-premium-account__suscription">
 				<legend>
-					<h2 class=">Suscripción a promociones</h2>
+					<h2 >Suscripción a promociones</h2>
 				</legend>
 				<p>Queremos remitirte información sobre eventos, promociones, sorteos y otras comunicaciones comerciales personalizadas
 					de acuerdo con tu perfil y preferencias, sobre productos, servicios y contenidos del Universo Unidad Editorial y/o de
@@ -163,7 +144,7 @@
 					<a href="">política de cookies</a>.</p>
 			</div>
 
-			<button class="ue-c-premium-account__button  form="premium-account-form" type="submit">Crea tu cuenta y continúa</button>
+			<button class="ue-c-premium-account__button"  form="premium-account-form" type="submit">Crea tu cuenta y continúa</button>
 
 	</div>
 	{{!-- HASTA AQUÍ ES EL COMPONENTE POLYMER --}}

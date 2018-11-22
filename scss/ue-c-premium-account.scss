@@ -14,8 +14,6 @@
   margin: 0 auto;
   font-family: $fontCond;
   font-size: 16px;
- 
-
   a {
     @include links;
   }
@@ -23,17 +21,12 @@
     text-align: center;
     display: block;
   }
-  .is-bottom{
-    margin-bottom: 2em;
-    display: block;
-  }
   .is-bold{
-    font-weight: bold;
+    font-weight: bolder;
   }
   .is-active {
     opacity: 1;
   }
-
   .is-hidden {
     display: none;
   }
@@ -122,8 +115,9 @@
     margin: -8px;
     background-color: $color5;
     margin-bottom: 1rem;
+    font-size: 14px;
     &-text {
-      margin-bottom: 0;
+      margin: 0;
     }
     &-list {
       list-style: none;
@@ -132,7 +126,7 @@
       padding: 0;
     }
     &-button {
-      font-size: 1em;
+      font-size: 16px;
       font-family: $fontCond;
       padding: 0;
       line-height: 1em;
@@ -232,11 +226,11 @@
     display: flex;
     align-items: center;
     border: 1px solid $color1;
-    border-radius: 5px;
-    height: 56px;
-    padding: 0 16px;
+    border-radius: 2px;
+    height: 44px;
+    padding: 0 8px;
     justify-content: space-between;
-    margin: 15px 0 40px 0;
+    margin: 15px 0 20px 0;
     cursor: pointer;
     &:hover {
       background-color: $color1;
@@ -247,6 +241,8 @@
     align-items: center;
     span {
       margin-right: 8px;
+      font-family: $fontCond;
+      font-size: 20px;
     }
   }
 
@@ -259,6 +255,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: $fontCond;
+    font-size: 20px;
+  }
+  &__accept{
+    font-family: $fontRegular;
+    font-size: 15px;
   }
 
   &__message {
@@ -274,6 +276,9 @@
     &-text{
       font-size: 14px;
       font-family: $fontRegular;
+      a,span{
+        font-weight: bolder;
+      }
     }
     &-correct{
       padding: 1em .5em;
@@ -287,6 +292,37 @@
       color:$errorText;
       background-color: $error;
       margin-bottom: 2em;;
+    }
+    &-download{
+      margin-bottom: 1em;
+      display: block;
+      color: red;
+    }
+    &-blocks{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    &-block{
+      background-color: $colorblock;
+      border-radius: 4px;
+      width: 45%;
+      font-family: $fontCond;
+      font-weight: bold;
+      font-size: 17px;
+      padding-top: 10px;
+      p{
+        margin: 0;
+      }
+    }
+    &-price{
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 1em;
+    }
+    button{
+      width: 85%;
+      margin: 10px;
     }
   }
   &__container {
@@ -329,7 +365,7 @@
     &-maintitle{
       @include maintitle
     }
-    &-main { 
+    &-maintext { 
       margin-bottom: 1em;
       p{
         font-family: $fontCond;
@@ -338,9 +374,22 @@
       span{
         font-weight: bold;
       }
-
     }
-    &-text{
+    &-oldprice{
+      position: relative;
+     &::before{
+       content: "";
+       height: 1px;
+       width: 100%;
+       background-color: black ;
+       position: absolute;
+       top: 50%;
+     }
+    }
+    &-newprice{
+      color: $correctText;
+    }
+    &-textlink{
       font-family: $fontCond;
       font-weight: normal;
       font-size:17px;
@@ -354,6 +403,10 @@
       padding-bottom: 1em;
       margin-bottom: 1em;
       border-bottom: 1px solid #edeef0;
+      label{
+        font-family: $fontRegular;
+        font-size: 14px;
+      }
     }
     &__error,
     &__correct {

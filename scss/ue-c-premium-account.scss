@@ -1,10 +1,13 @@
 @import "variables";
+@import "mq";
 @import "mixins";
 @import "fonts";
 @import "header-lite";
 
 
-
+.no-design{
+  border: 3px dotted olivedrab;
+}
 .ue-c-premium-account {
   @include resetPremium();
   max-width: $max-width;
@@ -87,6 +90,9 @@
   }
   //
   //
+  &__step{
+    font-size: 17px;
+  }
   &__password-eye {
     position: absolute;
     right: 10px;
@@ -179,7 +185,7 @@
     margin-bottom: 10px;
     font-size: 15px;
     &:hover {
-      background-color: $color4;
+      background-color: get-state-color( $color3 , $state: 'hover');
       text-decoration: underline;
       cursor: pointer;
     }
@@ -217,7 +223,8 @@
     border-bottom: 1px solid $color1;
     margin: 0;
     p {
-      line-height: 13px;
+      font-size: 0.5rem;
+      line-height: 1.3rem;
     }
   }
   &__paypal {
@@ -291,6 +298,7 @@
       padding: 1em .5em;
       color:$errorText;
       background-color: $error;
+      border:1px solid $error2;
       margin-bottom: 2em;;
     }
     &-download{

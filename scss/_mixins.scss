@@ -46,3 +46,82 @@
 		text-decoration: underline;
 	}
 }
+
+// ============================================================================================
+// Px to rem: transform px values to rem with base 16 by default
+// ============================================================================================
+@function px-rem($size, $base: 16px) {
+    @if (unitless($size)) {
+        $size: $size * 1px;
+    }
+    @if (unitless($base)) {
+        $base: $base * 1px;
+    }
+    @return 1rem * ($size / $base);
+}
+// ============================================================================================
+// Font Face
+// ============================================================================================
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( otf: "opentype", ttf: "truetype");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// ============================================================================================
+// Px to rem: transform px values to rem with base 16 by default
+// ============================================================================================
+@function px-rem($size, $base: 16px) {
+    @if (unitless($size)) {
+        $size: $size * 1px;
+    }
+    @if (unitless($base)) {
+        $base: $base * 1px;
+    }
+    @return 1rem * ($size / $base);
+}
+// ============================================================================================
+// Font Face
+// ============================================================================================
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+    $extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_"));
+    $formats: ( otf: "opentype", ttf: "truetype");
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// Function for get the hover an active states
+// by slightly darken a color base.
+// @param $color - color to shade
+// @param $percentage - percentage of `$color` in returned color
+// @return {Color}
+// color: get-state-color( color , $state: 'hover');
+@function get-state-color($color, $state: 'hover') {
+    @if $state == 'hover' {
+        @return mix(black, $color, 20%);
+    } 
+    @else if $state == 'active' {
+        @return mix(black, $color, 36%);
+    }
+}

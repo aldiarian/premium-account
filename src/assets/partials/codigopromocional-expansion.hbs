@@ -24,16 +24,35 @@
 				<p>Código utilizado. Por favor, introduce un código válido</p>
 			</span>
 			<input type="text" id="promotional-code" name="code-promotional" class="ue-c-premium-account__input-mail">
-			<button class="ue-c-premium-account__button" form="promotional-code-form" type="submit">Crear mi cuenta y continuar</button>
+			<button class="ue-c-premium-account__button" form="promotional-code-form" type="submit">Canjear código y continuar</button>
 		</form>
-		<h3 class="ue-c-premium-account__promotional-textlink">Disfruta de ventajas de ser Premium en El Mundo <a href="">con descuento</a></h3>
+
+		<p class="is-bold">Disfruta de las ventajas de ser premium en Expansión con descuento.</p>
 		<ul class="ue-c-premium-account__list ">
 			<li class="ue-c-premium-account__list-element">Sin permanencia: <a class="ue-c-premium-account__list-link" href="http://">Cancela cuando quieras</a></li>
-			<li class="ue-c-premium-account__list-element">Accede a contenido ilimitado de elmundo.es</li>
+			<li class="ue-c-premium-account__list-element">Accede a contenido ilimitado de Expansión</li>
 			<li class="ue-c-premium-account__list-element">Comenta en todos los contenidos Premium</li>
 			<li class="ue-c-premium-account__list-element">Accede a todas las ventajas del club</li>
-			<li class="ue-c-premium-account__list-element">Disfruta de Premium también en la app</li>
+			<li class="ue-c-premium-account__list-element">Comenta en todos los contenidos Premium</li>
 		</ul>
-		{{> premium-log-help }}
+	</div>
+</div>
+
+
+<div class="ue-c-premium-account {{clases}}">
+	<div class="ue-c-premium-account__message is-centered ">
+		<h2 class="ue-c-premium-account__message-maintitle">Canjea tu código promocional</h2>
+		<div class="ue-c-premium-account__message-error">
+			{{>icon_fails}}
+			<h2 class="ue-c-premium-account__message-title">
+				Hemos tenido problemas al canjear el código
+			</h2>
+			<p class="ue-c-premium-account__message-text">
+			Por favor, inténtalo de nuevo en unos minutos o escribe un correo a 
+			 <a href="mailto:atencionalcliente@ue.es">atencionalcliente@ue.es.</a> 
+			</p>
+		</div>
+		<button class="ue-c-premium-account__button" type="button">Canjear código y continuar</button>
+		<button class="ue-c-premium-account__button ue-c-premium-account__button--inverse" type="button">Ir a expansion.com</button>
 	</div>
 </div>

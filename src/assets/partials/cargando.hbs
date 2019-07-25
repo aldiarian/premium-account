@@ -1,13 +1,16 @@
 {{!-- /////////////esto no va en el código final/////////////////// --}}
 <h3 class="separador">Pantalla - cargando</h3>
 {{!-- /////////////esto no va en el código final/////////////////// --}}
-<div class="ue-c-premium-account__message is-centered">
-	<div class="ue-c-premium-account ue-c-premium-account__spinner">
-		<h2 class="ue-c-premium-account__spinner-title">¡Te has suscrito correctamente!</h2>
-		<div class="ue-c-premium-account__spinner-block">
-			<img aria-hidden="true" class="ue-c-premium-account__spinner-img" src="https://e00-elmundo.uecdn.es/assets/v11/img/loading-icon.gif" alt="logo el mundo">
-			<h2 class="ue-c-premium-account__spinner-text">Estamos registrando tu usuario. <br> Sólo tardaremos un instante.</h2>
+
+<div class="ue-c-premium-account {{clases}}">
+	<div class="ue-c-premium-account__message is-centered">
+		<div class="ue-c-premium-account ue-c-premium-account__spinner">
+			<div class="ue-c-premium-account__spinner-block">
+				<h2 class="ue-c-premium-account__spinner-text">Estamos registrando tu usuario. <br> Sólo tardaremos un instante.</h2>
+                {{#ifvalue cabecera value='elmundo'}} <img aria-hidden="true" class="ue-c-premium-account__spinner-img" src="https://e00-elmundo.uecdn.es/assets/v11/img/loading-icon.gif" alt="logo el mundo"> {{/ifvalue }}
+				{{#ifvalue cabecera value='expansion'}} <img aria-hidden="true" class="ue-c-premium-account__spinner-img" src="https://e00-expansion.uecdn.es/assets/v1/img/loading-icon.gif" alt="logo el mundo"> {{/ifvalue }}
+			</div>
+			
 		</div>
-		
 	</div>
 </div>

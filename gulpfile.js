@@ -41,6 +41,18 @@ function basic() {
         .pipe(hb()
             .partials('./src/assets/partials/**/*.hbs')
             .helpers('./src/assets/helpers/*.js')
+            .helpers({
+                unsaludo: function () { 
+                    return 'hola estoy saludando';
+                 },
+                ifvalue: function (conditional, options) {
+                    if (options.hash.value === conditional) {
+                        return options.fn(this)
+                    } else {
+                        return options.inverse(this);
+                    }
+                }
+            })
             .data('./src/assets/data/**/*.{js,json}')
         )
         .pipe(gulp.dest('./dist'))

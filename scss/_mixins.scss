@@ -1,4 +1,7 @@
 @mixin resetPremium {
+    html{
+        font-size: 100%;
+    }
 	a,
 	a:hover{
 		text-decoration: none;
@@ -25,7 +28,7 @@
 		appearance: checkbox;
 		margin: 0;
 		border-radius: 0;
-	}
+    }
 	
 	
 }
@@ -36,11 +39,15 @@
 	line-height: 1em;
 	font-family: $fontCond;
 	text-align: center;
-	color: black;
+    color: black;
+    .is-expansion &{
+        font-family: $fontRegularExpansion;
+        color: $colorExpansionText;
+      }
   }
 
 @mixin links{
-	color: #2a7aac;
+	color: #216087;
 	text-decoration: none;
 	&:hover{
 		text-decoration: underline;

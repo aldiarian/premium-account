@@ -11,6 +11,7 @@
 .ue-c-premium-account {
   @include resetPremium();
   max-width: $max-width;
+  min-height: 82vh;
   display: block;
   box-sizing: border-box;
   padding: 28px 14px;

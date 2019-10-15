@@ -2,16 +2,16 @@
 @import "mq";
 @import "mixins";
 @import "fonts";
+@import "footer_fixed";
 @import "header-lite";
 
 
-.no-design{
-  border: 3px dotted olivedrab;
-}
+// .no-design{
+//   border: 3px dotted olivedrab;
+// }
 .ue-c-premium-account {
   @include resetPremium();
   max-width: $max-width;
-  min-height: 82vh;
   display: block;
   box-sizing: border-box;
   padding: 28px 14px;
@@ -218,14 +218,15 @@
     }
   }
   &__smalltext {
+    font-family: $fontRegular;
     color: $color2;
     padding: 10px 0;
-    border-top: 1px solid $color1;
-    border-bottom: 1px solid $color1;
+    border-top: 1px solid $color7;
+    border-bottom: 1px solid $color7;
     margin: 0;
     p {
-      font-size: 0.5rem;
-      line-height: 1.3rem;
+      font-size: 13px;
+      line-height: 15px;
     }
   }
   &__paypal {
@@ -488,3 +489,4 @@
 }
 
 @import "footer-lite";
+

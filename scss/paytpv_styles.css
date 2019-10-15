@@ -1,33 +1,10 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PAYTPV - Preview</title>
-
-<style>
-
-
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-form input::-webkit-input-placeholder{
-  color:rgb(192, 190, 190);
-  font-size: 14px;
-}
-form input:-moz-placeholder{
-  color:rgb(192, 190, 190);opacity:1;
-  font-size: 14px;
-}
-form input::-moz-placeholder{
-  color:rgb(192, 190, 190);opacity:1;
-  font-size: 14px;
-}
-form input:-ms-input-placeholder{
-  color:rgb(192, 190, 190);
-  font-size: 14px;
-}
 
+
+form input::-webkit-input-placeholder{color:#ddd}form input:-moz-placeholder{color:#ddd;opacity:1}form input::-moz-placeholder{color:#ddd;opacity:1}form input:-ms-input-placeholder{color:#ddd}
 
 *{margin:0;padding:0;border:0;}
 
@@ -115,11 +92,9 @@ input.button:hover {background: -moz-linear-gradient(top, #009fe3 40%, #007fb2 1
 /* 		new styles for premium		*/
 /* 							 		*/
 
-.paytpv_fs,
-.paytpv_fs input,
-.paytpv_fs select {
-  font-family: "Roboto";
-}
+.paytpv_fs  {font-family: "Roboto";}
+.paytpv_fs input,.paytpv_fs select {font-family: "Roboto";}
+
 .paytpv_fs{
 	max-width: 100%;
 }
@@ -149,69 +124,13 @@ input.button:hover {background: -moz-linear-gradient(top, #009fe3 40%, #007fb2 1
 	padding-left: 5px!important;
 }
 .paytpv_fs input{
-  font-size: 16px;
-  border:1px solid #cecece;
+	font-size: 16px;
 }
 .paytpv_fs li .help{
-    text-align: left;
-    padding-top: 7px;
-    
+	text-align: left;
 }
 
 #formulario input[type="text"], #formulario input[type="password"]{
 	font-size: 16px;
 	background:white;
 }
-
-
-</style>
-
-    <body >
-    
-    <script type="text/javascript">function CheckForm(){return false;}</script><form onsubmit="return CheckForm();">
-        <div class="paytpv_fs">
-            <div class="content">
-                <ul>
-                    <li>
-                        <label id="label_PAN" for="MERCHANT_PAN_AUX" >Número de tarjeta</label>
-                        <input class="paytpv_merchant_pan"  maxlength="19" value="" data-paytpv="paNumberAux" placeholder="1234 5678 9012 3456" id="MERCHANT_PAN_AUX" name="MERCHANT_PAN_AUX" type="tel">
-                        <input data-paytpv="paNumber"  maxlength="19" value="" id="MERCHANT_PAN" name="MERCHANT_PAN" type="hidden">
-                    </li>
-                    <li class="vertical">
-                        <ul>
-                            <li>
-                                <label id="label_EXPIRY" for="expiry_date" >Fecha de caducidad</label>
-                                <input maxlength="5" name="expiry_date" id="expiry_date" placeholder="mm/aa" data-paytpv="expiration"  type="tel">
-                                <input id="mm" name="mm" maxlength="2" value="" type="hidden">
-                                <input id="yy" name="yy" maxlength="2" value="" type="hidden">
-                            </li>
-                            <li>
-                                <label id="label_CVC2" for="MERCHANT_CVC2_AUX" >Código CVC2</label>
-                                <input data-paytpv="paCvvAux" id="MERCHANT_CVC2_AUX" name="MERCHANT_CVC2_AUX"  maxlength="4" value="" placeholder="123" type="tel">
-                                <input data-paytpv="paCvv" id="MERCHANT_CVC2" name="MERCHANT_CVC2"  maxlength="4" value="" type="hidden">
-                            </li>
-                            <small id="label_3LAST"  class="help">El CVV es un código numérico, generalmente de 3 dígitos detrás de la tarjeta.
-                              </small>
-                        </ul>
-                    </li>
-                    <li>
-                        <label id="label_HOLDERNAME" for="Nombre_AUX" >Titular de la tarjeta</label>
-                        <input data-paytpv="holdernameAux" id="Nombre_AUX" name="Nombre_AUX"  maxlength="50" value="" placeholder="Titular de la tarjeta" type="text">
-                        <input data-paytpv="holdername" id="Nombre" name="Nombre"  maxlength="50" value="" type="hidden">
-                    </li>
-                    <li>
-                        <input  class="button" value="Aceptar pago" id="btnforg" type="button">
-                    </li>
-                    <li>
-                        <label style="display:none;" id="paymentErrorMsg"></label>
-                    </li>
-                    <li>
-                        
-                        <div class="loader" id="clockwait" style="display:none;"><img src="../../gateway/PAYTPV_template_010/img/loader.gif" alt="Espere"></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-    </form></body></html>
-    

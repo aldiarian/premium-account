@@ -252,6 +252,10 @@
       margin-right: 8px;
       font-family: $fontCond;
       font-size: 20px;
+      color:black;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 

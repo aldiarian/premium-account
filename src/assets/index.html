@@ -19,14 +19,21 @@
             padding: 1em 0;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .no-design{
+            border: 3px dotted olivedrab;
+        }
+        main.is-expansion{
+            background-color: $colorExpansion;
+        }
+
     </style>
     <!-- aquí elegimos el json que queremos que lea -->
-    {{#each itemsElmundo}}
+    {{#each itemsExpansion}}
         {{> header}}
-        {{#ifvalue cabecera value='elmundo'}} {{> premium-log-componente}} {{/ifvalue}}
+        {{#ifvalue cabecera value='elmundo'}}   {{> premium-log-componente}} {{/ifvalue}}
         {{#ifvalue cabecera value='expansion'}} {{> premium-log-expansion}} {{/ifvalue}}
 
-        {{#ifvalue cabecera value='elmundo'}} {{> footer}} {{/ifvalue}}
+        {{#ifvalue cabecera value='elmundo'}}   {{> footer}} {{/ifvalue}}
         {{#ifvalue cabecera value='expansion'}} {{> footer-expansion}} {{/ifvalue}}
     {{/each}}
 <script src="myscript.js"></script>

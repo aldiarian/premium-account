@@ -1,7 +1,7 @@
-@import "variables";
-@import "mq";
-@import "mixins";
 @import "fonts";
+@import "mq";
+@import "variables";
+@import "mixins";
 @import "footer_fixed";
 @import "header-lite";
 
@@ -11,22 +11,34 @@
 // }
 .ue-c-premium-account {
   @include resetPremium();
-  max-width: $max-width;
   display: block;
   box-sizing: border-box;
-  padding: 28px 14px;
+  padding: 28px 0;
+  max-width: 95%;
   margin: 0 auto;
-  font-family: $fontCond;
   font-size: 16px;
+  font-family: $fontRegular;
+  @include mq( $mq1 ) {
+    max-width: $max-width;
+  }
+  
   a {
     @include links;
+  }
+  
+  .is-expansion &{
+    font-family: $fontRegular;
+    color:$colorExpansionText;
   }
   .is-centered {
     text-align: center;
     display: block;
-  }
+  } 
   .is-bold{
     font-weight: bolder;
+  }
+  .is-italic{
+    font-style: italic;
   }
   .is-active {
     opacity: 1;
@@ -34,16 +46,17 @@
   .is-hidden {
     display: none;
   }
+
+
   &__header {
-    background-color: white;
+    background-color: $color0;
     height: 44px;
     padding: 0 1rem;
     border-bottom: 1px solid $color6;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-    @media all and (min-width: $mq1) {
+    @include mq( $mq1 ) {
       justify-content: center;
       width: 100%;
       height: 60px;
@@ -53,7 +66,7 @@
   &__header-logo {
     svg {
       width: 150px;
-      @media all and (min-width: $mq1) {
+      @include mq( $mq1 ) {
         width: 294px;
       }
     }
@@ -89,8 +102,12 @@
     width: 0;
     margin: 0;
   }
-  //
-  //
+  &__title{
+    @include maintitle;
+    .is-expansion &{
+      font-family: $fontRegular;
+    }
+  }
   &__step{
     font-size: 17px;
   }
@@ -113,16 +130,17 @@
     }
   }
   &__plan {
-    font-family: $fontCond;
-    font-size: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    margin: -8px;
     background-color: $color5;
     margin-bottom: 1rem;
     font-size: 14px;
+    .is-expansion &{
+      background-color: $color0;
+      border: 1px solid $colorExpansion3;
+    }
     &-text {
       margin: 0;
     }
@@ -149,6 +167,11 @@
         text-decoration: underline;
         background-color: #fff;
       }
+      .is-expansion &{
+        font-family: $fontRegular;
+        font-size: 14px;
+      }
+      
     }
   }
   &__icon{
@@ -179,7 +202,7 @@
   &__button {
     width: 100%;
     background-color: $color3;
-    color: white;
+    color: $color0;
     border: none;
     border-radius: 3px;
     line-height: 40px;
@@ -190,31 +213,41 @@
       text-decoration: underline;
       cursor: pointer;
     }
+    &--inverse{
+      background-color: #fff;
+      border:1px solid $colorExpansion2;
+      color: $colorExpansion2;
+    }
   }
   &__bookmark {
     text-align: center;
     width: 100%;
     position: relative;
     margin: 10px auto;
+    height: 22px;
     &::after {
       content: "";
       width: 100%;
       display: block;
       height: 1px;
-      background-color: $color1;
+      background-color: $colorExpansion3;
       top: 10px;
       position: absolute;
-      z-index: -1;
     }
     p {
       font-size: 18px;
       line-height: 18px;
-      background-color: white;
+      background-color: $color0;
       width: 40px;
-      height: 22px;
       border-radius: 120px;
       margin: 0 auto;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
       z-index: 1;
+      .is-expansion &{
+        background-color: $colorExpansion;
+      }
     }
   }
   &__smalltext {
@@ -258,7 +291,6 @@
       }
     }
   }
-
   &__card {
     font-family: $fontRegular;
     font-weight: bold;
@@ -266,20 +298,27 @@
   }
   &__card-text {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-family: $fontCond;
     font-size: 20px;
+    > span{
+      margin-right: 0.5rem;
+    }
+    > svg{
+      margin: 0  0.3rem;
+    }
   }
   &__accept{
     font-family: $fontRegular;
     font-size: 15px;
   }
-
   &__message {
     text-align: center;
     &-maintitle{
       @include maintitle;
+      .is-expansion &{
+        font-family: $fontRegular;
+      }
     }
     
     &-title{
@@ -289,7 +328,11 @@
     &-text{
       font-size: 14px;
       font-family: $fontRegular;
-      a,span{
+      .is-expansion &{
+        font-family: $fontRegular;
+        color: $colorExpansionText;
+      }
+      a{
         font-weight: bolder;
       }
     }
@@ -299,29 +342,49 @@
       background-color: $correct;
       margin-bottom: 2em;
       border:1px solid $correct2;
+      .is-expansion &{
+        background-color: $color0;
+        border: 1px solid $colorExpansion3;
+      }
     }
     &-error{
       padding: 1em .5em;
       color:$errorText;
       background-color: $error;
       border:1px solid $error2;
-      margin-bottom: 2em;;
+      margin-bottom: 2em;
+      .is-expansion &{
+        background-color: $color0;
+        border: 1px solid $colorExpansion3;
+      }
+    }
+    &-create{
+      padding: 1em;
+      background-color: $error;
+      border:1px solid $error2;
+      margin-bottom: 2em;
+      .is-expansion &{
+        background-color: $colorExpansion5;
+        border: 1px solid $colorExpansion3;
+      }
     }
     &-download{
       margin-bottom: 1em;
       display: block;
-      color: red;
     }
     &-blocks{
       display: flex;
       justify-content: space-between;
-      
+      > div{
+        width: 45%;
+      }
+      > div:nth-child(1):nth-last-child(1) {
+        width: 100%;
+      }
     }
     &-block{
       background-color: $colorblock;
       border-radius: 4px;
-      width: 45%;
-      font-family: $fontCond;
       font-weight: bold;
       font-size: 17px;
       padding-top: 10px;
@@ -341,6 +404,12 @@
   }
   &__container {
     position: relative;
+    & > *{
+      margin-bottom: .5rem;
+    }
+    p{
+      margin: 0;
+    }
   }
   &__confirm {
     display: flex;
@@ -359,6 +428,11 @@
     background-color: #edeef0;
     padding: 10px 0;
     font-family: $fontCond;
+    .is-expansion &{
+      font-family: $fontRegular;
+      background-color: $color0;
+      border:1px solid $colorExpansion3;
+    }
     &-text{
       font-weight: bold;
       margin: 0;
@@ -384,6 +458,9 @@
       p{
         font-family: $fontCond;
         margin: 0;
+        .is-expansion &{
+          font-family: $fontRegular;
+        }
       }
       span{
         font-weight: bold;
@@ -402,6 +479,9 @@
     }
     &-newprice{
       color: $correctText;
+      .is-expansion &{
+        color: $colorExpansion2;
+      }
     }
     &-textlink{
       font-family: $fontCond;
@@ -431,6 +511,9 @@
         color: $errorText;
         font-size: 14px;
         margin: 0 0 5px 5px;
+        .is-expansion &{
+          font-size: 13px;
+        }
       }
       svg {
         fill: $errorText;
@@ -467,6 +550,20 @@
         background-color: $color3;
         border-radius: 120px;
       }
+      .is-expansion &{
+        font-family: $fontRegular;
+        &::before {
+          content: "\2713";
+          position: absolute;
+          top: 0;
+          left: -3px;
+          width: 6px;
+          height: 6px;
+          border-radius: 0;
+          background-color: transparent;
+          color:$colorExpansion2;
+        }
+      }
     }
     &-link{
       @include links;
@@ -476,18 +573,22 @@
     &-block{
       display: flex;
       align-items: center;
-
+      .is-expansion &{
+        display: block;
+      }
     }
     &-title{
-      font-family: $fontCond;
       font-size: 20px;
     }
     &-text{
-      color: $colorbase;
-      font-family: $fontRegular;
       font-weight: bold;
       font-size: 17px;
+      color: $colorbase;
       text-align: left;
+      .is-expansion &{
+        color: black;
+        text-align: center;
+      }
     }
   }
 }

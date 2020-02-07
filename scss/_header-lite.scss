@@ -8,25 +8,45 @@ body{
     display: none;
 }
 .ue-c-header-lite{
-    background-color: $color3;
     height: px-rem(44);
-    padding: 0 px-rem(16);
+    padding: 0;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
     @include mq($from: tablet) {
         justify-content: flex-start;
         width: 100%;
         height: px-rem(44);
-        padding: 0 0 0 px-rem(16);
+        padding: 0;
     }
     &__logo{
-        svg{
+        padding: 0 1rem;
+        width: px-rem(150);
+        @include mq($from: tablet) {
+            width: px-rem(175);
+        }
+        .is-elmundo &{
             width: px-rem(150);
             @include mq($from: tablet) {
                 width: px-rem(175);
             }
         }
+        .is-expansion &{
+            margin-top: 1.2rem;
+            width: px-rem(150);
+            height: px-rem(34);
+        }
+    }
+    &--center{
+        justify-content: center;
+    }
+    &.is-elmundo{
+        justify-content: flex-start;
+        background-color: $color3;
+    }
+    &.is-expansion{
+        justify-content: center;
+        background-color: white;
+        border-bottom:4px solid $colorExpansion2;
     }
 }

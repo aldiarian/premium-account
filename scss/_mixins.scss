@@ -1,4 +1,7 @@
 @mixin resetPremium {
+    html{
+        font-size: 100%;
+    }
 	a,
 	a:hover{
 		text-decoration: none;
@@ -25,7 +28,7 @@
 		appearance: checkbox;
 		margin: 0;
 		border-radius: 0;
-	}
+    }
 	
 	
 }
@@ -34,9 +37,13 @@
 @mixin maintitle{
 	font-size: 20px;
 	line-height: 1em;
-	font-family: $fontCond;
+	font-family: $fontRegular;
 	text-align: center;
-	color: black;
+    color: black;
+    .is-expansion &{
+        font-family: $fontRegular;
+        color: $colorExpansionText;
+      }
   }
 
 @mixin links{
@@ -47,37 +54,6 @@
 	}
 }
 
-// ============================================================================================
-// Px to rem: transform px values to rem with base 16 by default
-// ============================================================================================
-@function px-rem($size, $base: 16px) {
-    @if (unitless($size)) {
-        $size: $size * 1px;
-    }
-    @if (unitless($base)) {
-        $base: $base * 1px;
-    }
-    @return 1rem * ($size / $base);
-}
-// ============================================================================================
-// Font Face
-// ============================================================================================
-@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-    $src: null;
-    $extmods: ( eot: "?", svg: "#" + str-replace($name, " ", "_"));
-    $formats: ( otf: "opentype", ttf: "truetype");
-    @each $ext in $exts {
-        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-    }
-    @font-face {
-        font-family: quote($name);
-        font-style: $style;
-        font-weight: $weight;
-        src: $src;
-    }
-}
 
 // ============================================================================================
 // Px to rem: transform px values to rem with base 16 by default

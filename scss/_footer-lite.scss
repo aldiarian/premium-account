@@ -2,17 +2,13 @@
 
 .ue-c-footer-lite {
   font-family: $font-footer;
+  &.is-expansion {
+    font-family: $fontRegularExpansion;
+    background-color: $colorExpansion;
+    padding: 1rem 0;
+  }
   ul {
     list-style: none;
-  }
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1.5em;
-    @media all and (min-width: $mq1) {
-      margin-bottom: 0;
-    };
   }
   .is-hidden {
     position: absolute;
@@ -22,13 +18,22 @@
     height: 1px;
     overflow: hidden;
   }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5em;
+    @include mq( $mq1 ) {
+      margin-bottom: 0;
+    };
+  }
   &__copyright {
     text-align: center;
     font-size: 12px;
     address {
       font-style: normal;
     }
-    @media all and (min-width: $mq1) {
+    @include mq( $mq1 ) {
       margin: 0 4em;
     };
   }
@@ -39,11 +44,18 @@
     display: block;
     margin: 0 auto;
   }
+  &__icon-expansion {
+    width: 130px;
+    height: 26px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+  }
 
   &__social-networks {
     display: flex;
     justify-content: center;
-    @media all and (min-width: $mq1) {
+    @include mq( $mq1 ) {
       order: 3;
     };
   }
@@ -83,11 +95,16 @@
       }
     }
   }
+  &__icon-whatsapp{
+    @include mq( $mq1 ) {
+      display: none;
+    };
+  }
 
   &__partners {
     display: flex;
     justify-content: center;
-    @media all and (min-width: $mq1) {
+    @include mq( $mq1 ) {
       order: 1;
     };
   }
@@ -108,7 +125,11 @@
     padding: 0.75em;
     border-top: 1px solid $color5;
     border-bottom: 1px solid $color5;
-    @media all and (min-width: $mq1) {
+    .is-expansion &{
+      border: 0;
+      padding: 0;
+    }
+    @include mq( $mq1 ) {
       border:0;
       order: 2;
       margin: 0;
@@ -132,9 +153,15 @@
           margin: 0;
         }
       }
+      .is-expansion &{
+        margin: 0 10px;
+        &:after {
+          content: none;
+        }
+      }
       a {
         font-size: 13px;
-        color: #4a4a4a;
+        color: $colorExpansionText;
         text-decoration: none;
         &:hover {
           color: #49a3db;
@@ -142,8 +169,45 @@
       }
     }
   }
+  &__list-contact{
+    display: flex;
+    flex-direction: column;
+    @include mq( $mq1 ){
+      flex-direction: row;
+      justify-content: center;
+    }
+    p{
+      font-family: $fontRegularExpansion;
+      font-size: 13px;
+      text-align: center;
+      color: $colorExpansionText;
+    }
+    &-group{
+      text-align: center;
+      margin:0 2rem;
+      padding: 0;
+      a{
+        display: inline-block;
+        margin:0 .2rem;
+      }
+
+    }
+    &-button{
+      background-color: $color3;
+      color: $color0;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      text-decoration: none;
+      padding: .3rem 1rem;
+      display: inline-block;
+      text-align: center;
+      width: 40%;
+    }
+  }
   &__container-first{
-    @media all and (min-width: $mq1) {
+    @include mq( $mq1 ) {
       display: flex;
       justify-content: center;
       align-items: center;

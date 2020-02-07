@@ -6,9 +6,10 @@
 @import "header-lite";
 
 
-// .no-design{
-//   border: 3px dotted olivedrab;
-// }
+body{
+  background-color: $colorMain;
+}
+
 .ue-c-premium-account {
   @include resetPremium();
   display: block;
@@ -18,6 +19,7 @@
   margin: 0 auto;
   font-size: 16px;
   font-family: $fontRegular;
+  color:$colorTextMain;
   @include mq( $mq1 ) {
     max-width: $max-width;
   }
@@ -26,10 +28,6 @@
     @include links;
   }
   
-  .is-expansion &{
-    font-family: $fontRegular;
-    color:$colorExpansionText;
-  }
   .is-centered {
     text-align: center;
     display: block;
@@ -46,7 +44,6 @@
   .is-hidden {
     display: none;
   }
-
 
   &__header {
     background-color: $color0;
@@ -104,9 +101,7 @@
   }
   &__title{
     @include maintitle;
-    .is-expansion &{
-      font-family: $fontRegular;
-    }
+    font-family: $fontRegular;
   }
   &__step{
     font-size: 17px;
@@ -139,7 +134,7 @@
     font-size: 14px;
     .is-expansion &{
       background-color: $color0;
-      border: 1px solid $colorExpansion3;
+      border: 1px solid $colorMain3;
     }
     &-text {
       margin: 0;
@@ -215,8 +210,8 @@
     }
     &--inverse{
       background-color: #fff;
-      border:1px solid $colorExpansion2;
-      color: $colorExpansion2;
+      border:1px solid $colorMain2;
+      color: $colorMain2;
     }
   }
   &__bookmark {
@@ -230,7 +225,7 @@
       width: 100%;
       display: block;
       height: 1px;
-      background-color: $colorExpansion3;
+      background-color: $colorMain3;
       top: 10px;
       position: absolute;
     }
@@ -246,16 +241,13 @@
       left: 50%;
       z-index: 1;
       .is-expansion &{
-        background-color: $colorExpansion;
+        background-color: $colorMain;
       }
     }
   }
   &__smalltext {
     font-family: $fontRegular;
     color: $color2;
-    padding: 10px 0;
-    border-top: 1px solid $color7;
-    border-bottom: 1px solid $color7;
     margin: 0;
     p {
       font-size: 13px;
@@ -328,35 +320,26 @@
     &-text{
       font-size: 14px;
       font-family: $fontRegular;
-      .is-expansion &{
-        font-family: $fontRegular;
-        color: $colorExpansionText;
-      }
+      color: $colorTextMain;
       a{
         font-weight: bolder;
       }
     }
     &-correct{
+      border-radius: $borderRadiusMessage;
+      border:1px solid $correct2;
+      background-color: $color0;
       padding: 1em .5em;
       color: $correctText;
-      background-color: $correct;
       margin-bottom: 2em;
-      border:1px solid $correct2;
-      .is-expansion &{
-        background-color: $color0;
-        border: 1px solid $colorExpansion3;
-      }
     }
     &-error{
+      border-radius: $borderRadiusMessage;
+      border:1px solid $errorText;
+      background-color: $color0;
       padding: 1em .5em;
       color:$errorText;
-      background-color: $error;
-      border:1px solid $error2;
       margin-bottom: 2em;
-      .is-expansion &{
-        background-color: $color0;
-        border: 1px solid $colorExpansion3;
-      }
     }
     &-create{
       padding: 1em;
@@ -364,8 +347,8 @@
       border:1px solid $error2;
       margin-bottom: 2em;
       .is-expansion &{
-        background-color: $colorExpansion5;
-        border: 1px solid $colorExpansion3;
+        background-color: $colorMain5;
+        border: 1px solid $colorMain3;
       }
     }
     &-download{
@@ -431,7 +414,7 @@
     .is-expansion &{
       font-family: $fontRegular;
       background-color: $color0;
-      border:1px solid $colorExpansion3;
+      border:1px solid $colorMain3;
     }
     &-text{
       font-weight: bold;
@@ -480,7 +463,7 @@
     &-newprice{
       color: $correctText;
       .is-expansion &{
-        color: $colorExpansion2;
+        color: $colorMain2;
       }
     }
     &-textlink{
@@ -561,7 +544,7 @@
           height: 6px;
           border-radius: 0;
           background-color: transparent;
-          color:$colorExpansion2;
+          color:$colorMain2;
         }
       }
     }
@@ -571,11 +554,9 @@
   }
   &__spinner{
     &-block{
-      display: flex;
+      display: $displaySpinner;
+      flex-direction: $displaySpinnerDirecction;
       align-items: center;
-      .is-expansion &{
-        display: block;
-      }
     }
     &-title{
       font-size: 20px;
@@ -583,12 +564,8 @@
     &-text{
       font-weight: bold;
       font-size: 17px;
-      color: $colorbase;
-      text-align: left;
-      .is-expansion &{
-        color: black;
-        text-align: center;
-      }
+      color: $colorTextMain;
+      text-align: center;
     }
   }
 }

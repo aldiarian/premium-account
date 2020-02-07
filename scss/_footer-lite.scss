@@ -3,8 +3,8 @@
 .ue-c-footer-lite {
   font-family: $font-footer;
   &.is-expansion {
-    font-family: $fontRegularExpansion;
-    background-color: $colorExpansion;
+    font-family: $fontRegular;
+    background-color: $colorMain;
     padding: 1rem 0;
   }
   ul {
@@ -161,7 +161,7 @@
       }
       a {
         font-size: 13px;
-        color: $colorExpansionText;
+        color: $colorTextMain;
         text-decoration: none;
         &:hover {
           color: #49a3db;
@@ -177,10 +177,10 @@
       justify-content: center;
     }
     p{
-      font-family: $fontRegularExpansion;
+      font-family: $fontRegular;
       font-size: 13px;
       text-align: center;
-      color: $colorExpansionText;
+      color: $colorTextMain;
     }
     &-group{
       text-align: center;

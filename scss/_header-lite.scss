@@ -1,52 +1,28 @@
 // HEADER 
-
-body{
-    margin: 0;
-    padding: 0;
-}
-.hidden-content{
-    display: none;
-}
 .ue-c-header-lite{
     height: px-rem(44);
     padding: 0;
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    justify-content: get-value-from-map( $ue-c-header-lite, header, mobile,  justify-content);
+    background-color: get-value-from-map( $ue-c-header-lite, header, mobile, background-color);
+    border-bottom: get-value-from-map( $ue-c-header-lite, header, mobile, border-bottom);
     @include mq($from: tablet) {
-        justify-content: flex-start;
+        justify-content: get-value-from-map( $ue-c-header-lite, header, tablet,  justify-content);
         width: 100%;
         height: px-rem(44);
         padding: 0;
     }
     &__logo{
         padding: 0 1rem;
-        width: px-rem(150);
+        width: px-rem( get-value-from-map( $ue-c-header-lite, logo, mobile, width) );
+        margin: get-value-from-map( $ue-c-header-lite, logo, mobile, margin);
         @include mq($from: tablet) {
-            width: px-rem(175);
-        }
-        .is-elmundo &{
-            width: px-rem(150);
-            @include mq($from: tablet) {
-                width: px-rem(175);
-            }
-        }
-        .is-expansion &{
-            margin-top: 1.2rem;
-            width: px-rem(150);
-            height: px-rem(34);
+            width: px-rem( get-value-from-map( $ue-c-header-lite, logo, tablet, width) );
         }
     }
     &--center{
         justify-content: center;
-    }
-    &.is-elmundo{
-        justify-content: flex-start;
-        background-color: $color3;
-    }
-    &.is-expansion{
-        justify-content: center;
-        background-color: white;
-        border-bottom:4px solid $colorMain2;
     }
 }

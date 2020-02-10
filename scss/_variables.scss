@@ -37,3 +37,20 @@ $correctText:#0b7542;
 
 $colorblock: #c3d5e5;
 
+$ue-c-premium-account: (
+    plan:( background-color: $color0, border: 1px solid $colorMain ),
+    button: (font-family: $fontRegular,  font-size: 14px),
+    bookmark: ( background-color: $colorMain),
+    help: ( font-family: $fontRegular, background-color: $color0, border:1px solid $colorMain3)
+);
+
+$ue-c-header-lite: (
+    header: (
+        mobile:( background-color: white, justify-content: center, border-bottom: 4px solid $color4),
+        tablet:( background-color: white, justify-content: center, border-bottom: 4px solid $color4)
+    ),
+    logo: (
+        mobile: (width: 150, height:34, padding: 0 1rem , margin: 1.2rem 0 0 0),
+        tablet: (width: 175, height:34, padding: 0 1rem , margin: auto),
+    )
+);

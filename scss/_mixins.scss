@@ -101,3 +101,40 @@
         @return mix(black, $color, 36%);
     }
 }
+
+
+
+// ============================================================================================
+// Get value from map with differents depth
+// @param {Map} $map
+// @param {List} $keys
+// @return {value} value of the map
+// ============================================================================================
+@function get-value-from-map($map, $keys...) {
+    $internalmap: $map;
+    @if type-of($map) != 'map' {
+        @error 'The map variable that is passed in not a map but a `#{type-of($internalmap)}` with the value of `#{$internalmap}`. Map you passed: #{$map} and parameters: #{$keys}';
+    }
+    @else {
+        @each $key in $keys {
+            @if type-of(map-get($internalmap, $key)) != 'map' {
+                @if type-of(map-get($internalmap, $key)) == 'null' {
+                    @error 'Key `#{$key}` does not exists in map, only the following elements: (`#{map-keys($internalmap)}`). Map you passed: #{$map} and parameters: #{$keys}';
+                }
+                @else {
+                    @if index($keys, $key) < length($keys) {
+                        $plus: '';
+                        @for $i from index($keys, $key)+1 through length($keys) {
+                            $plus: $plus + '"' + nth($keys, $i) + '"';
+                        }
+                        @error 'you passed more parameters than needed to `get-value-from-map`, these parameters were not used: #{$plus}. Map you passed: #{$map} and parameters: #{$keys}'
+                    }
+                    @return map-get($internalmap, $key);
+                }
+            }
+            @else {
+                $internalmap: map-get($internalmap, $key);
+            }
+        }
+    }
+}

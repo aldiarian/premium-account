@@ -8,6 +8,12 @@
 
 body{
   background-color: $colorMain;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden-content{
+  display: none;
 }
 
 .ue-c-premium-account {
@@ -129,13 +135,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    background-color: $color5;
+    background-color: get-value-from-map($ue-c-premium-account, plan, background-color);
     margin-bottom: 1rem;
     font-size: 14px;
-    .is-expansion &{
-      background-color: $color0;
-      border: 1px solid $colorMain3;
-    }
+    border: get-value-from-map($ue-c-premium-account, plan, border);
     &-text {
       margin: 0;
     }
@@ -146,8 +149,8 @@ body{
       padding: 0;
     }
     &-button {
-      font-size: 16px;
-      font-family: $fontCond;
+      font-size: get-value-from-map($ue-c-premium-account, button, font-size);
+      font-family: get-value-from-map($ue-c-premium-account, button, font-family);
       padding: 0;
       line-height: 1em;
       color: $color3;
@@ -162,11 +165,6 @@ body{
         text-decoration: underline;
         background-color: #fff;
       }
-      .is-expansion &{
-        font-family: $fontRegular;
-        font-size: 14px;
-      }
-      
     }
   }
   &__icon{
@@ -232,7 +230,7 @@ body{
     p {
       font-size: 18px;
       line-height: 18px;
-      background-color: $color0;
+      background-color: get-value-from-map(  $ue-c-premium-account, bookmark,  background-color);
       width: 40px;
       border-radius: 120px;
       margin: 0 auto;
@@ -240,9 +238,6 @@ body{
       transform: translateX(-50%);
       left: 50%;
       z-index: 1;
-      .is-expansion &{
-        background-color: $colorMain;
-      }
     }
   }
   &__smalltext {
@@ -308,9 +303,6 @@ body{
     text-align: center;
     &-maintitle{
       @include maintitle;
-      .is-expansion &{
-        font-family: $fontRegular;
-      }
     }
     
     &-title{
@@ -341,16 +333,16 @@ body{
       color:$errorText;
       margin-bottom: 2em;
     }
-    &-create{
-      padding: 1em;
-      background-color: $error;
-      border:1px solid $error2;
-      margin-bottom: 2em;
-      .is-expansion &{
-        background-color: $colorMain5;
-        border: 1px solid $colorMain3;
-      }
-    }
+    // &-create{
+    //   padding: 1em;
+    //   background-color: $error;
+    //   border:1px solid $error2;
+    //   margin-bottom: 2em;
+    //   .is-expansion &{
+    //     background-color: $colorMain5;
+    //     border: 1px solid $colorMain3;
+    //   }
+    // }
     &-download{
       margin-bottom: 1em;
       display: block;
@@ -408,14 +400,10 @@ body{
   }
   &__help {
     text-align: center;
-    background-color: #edeef0;
+    background-color: get-value-from-map( $ue-c-premium-account, help, background-color);
     padding: 10px 0;
-    font-family: $fontCond;
-    .is-expansion &{
-      font-family: $fontRegular;
-      background-color: $color0;
-      border:1px solid $colorMain3;
-    }
+    font-family: get-value-from-map( $ue-c-premium-account, help, font-family);
+    border: get-value-from-map( $ue-c-premium-account, help, border );
     &-text{
       font-weight: bold;
       margin: 0;

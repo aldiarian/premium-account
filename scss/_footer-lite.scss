@@ -4,6 +4,7 @@
     font-family: $fontRegular;
     background-color: $colorMain;
     padding: 1rem 0;
+    font-size: 0.9rem;
   ul {
     list-style: none;
   }
@@ -26,7 +27,6 @@
   }
   &__copyright {
     text-align: center;
-    font-size: 16px;
     address {
       font-style: normal;
     }
@@ -135,24 +135,9 @@
     text-align: center;
     li {
       display: inline-block;
-      &:after {
-        content: "|";
-        margin: 0 10px;
-      }
-      &:last-of-type {
-        &:after {
-          content: "";
-          margin: 0;
-        }
-      }
-      .is-expansion &{
-        margin: 0 10px;
-        &:after {
-          content: none;
-        }
-      }
+      margin: 0 10px;
+      font-size: 0.9rem;
       a {
-        font-size: 13px;
         color: $colorTextMain;
         text-decoration: none;
         &:hover {
@@ -170,7 +155,6 @@
     }
     p{
       font-family: $fontRegular;
-      font-size: 13px;
       text-align: center;
       color: $colorTextMain;
     }

@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <style>
         .separador{
             font-size: 18px;
@@ -22,19 +21,12 @@
         .no-design{
             border: 3px dotted olivedrab;
         }
-        main.is-expansion{
-            background-color: #fff1e0;;
-        }
-
     </style>
-    <!-- aquí elegimos el json que queremos que lea -->
+
     {{#each itemsExpansion}}
         {{> header}}
-        {{#ifvalue cabecera value='elmundo'}}   {{> premium-log-componente}} {{/ifvalue}}
-        {{#ifvalue cabecera value='expansion'}} {{> premium-log-expansion}} {{/ifvalue}}
-
-        {{#ifvalue cabecera value='elmundo'}}   {{> footer}} {{/ifvalue}}
-        {{#ifvalue cabecera value='expansion'}} {{> footer-expansion}} {{/ifvalue}}
+        {{> premium-log-expansion}} 
+        {{> footer-expansion}}
     {{/each}}
 <script src="myscript.js"></script>
 </body>    

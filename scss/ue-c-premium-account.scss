@@ -109,9 +109,6 @@ body{
     @include maintitle;
     font-family: $fontRegular;
   }
-  &__step{
-    font-size: 17px;
-  }
   &__password-eye {
     position: absolute;
     right: 10px;
@@ -139,6 +136,26 @@ body{
     margin-bottom: 1rem;
     font-size: 14px;
     border: get-value-from-map($ue-c-premium-account, plan, border);
+    // Full size effect
+    position: relative; 
+    z-index: 0;
+    margin: 0 -600rem;
+    padding: 1.2rem 600rem;
+    background: white;
+    @include mq( $mq1 ) {
+      background:transparent;
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      z-index: -1; 
+      top: 0;
+      bottom: 0;
+      left: 598.5rem;
+      right: 598.5rem;
+      background: white;
+    }
+    // End full size effect
     &-text {
       margin: 0;
     }
@@ -160,7 +177,6 @@ body{
       background-color: transparent;
       min-height: 37px;
       min-width: 107px;
-      margin: .5em;
       &:hover {
         text-decoration: underline;
         background-color: #fff;

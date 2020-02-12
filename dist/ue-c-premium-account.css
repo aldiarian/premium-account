@@ -692,7 +692,7 @@ body {
 
 /* line 360, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-block {
-  background-color: #c3d5e5;
+  background-color: #fff;
   border-radius: 4px;
   font-weight: bold;
   font-size: 17px;
@@ -755,7 +755,7 @@ body {
 /* line 401, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
   text-align: center;
-  background-color: #fff;
+  background-color: #e2d8cb;
   padding: 10px 0;
   font-family: "Heebo", sans-serif;
   border: 1px solid #cecece;
@@ -1008,22 +1008,17 @@ body {
 
 /* line 3, scss/_footer-lite.scss */
 .ue-c-footer-lite {
-  font-family: "Clear Sans", Arial, sans-serif, helvetica;
-}
-
-/* line 5, scss/_footer-lite.scss */
-.ue-c-footer-lite.is-expansion {
   font-family: "Heebo", sans-serif;
   background-color: #fff1e0;
   padding: 1rem 0;
 }
 
-/* line 10, scss/_footer-lite.scss */
+/* line 7, scss/_footer-lite.scss */
 .ue-c-footer-lite ul {
   list-style: none;
 }
 
-/* line 13, scss/_footer-lite.scss */
+/* line 10, scss/_footer-lite.scss */
 .ue-c-footer-lite .is-hidden {
   position: absolute;
   left: -10000px;
@@ -1033,7 +1028,7 @@ body {
   overflow: hidden;
 }
 
-/* line 21, scss/_footer-lite.scss */
+/* line 18, scss/_footer-lite.scss */
 .ue-c-footer-lite__list {
   list-style: none;
   margin: 0;
@@ -1042,31 +1037,31 @@ body {
 }
 
 @media (min-width: 30em) {
-  /* line 21, scss/_footer-lite.scss */
+  /* line 18, scss/_footer-lite.scss */
   .ue-c-footer-lite__list {
     margin-bottom: 0;
   }
 }
 
-/* line 30, scss/_footer-lite.scss */
+/* line 27, scss/_footer-lite.scss */
 .ue-c-footer-lite__copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
 }
 
-/* line 33, scss/_footer-lite.scss */
+/* line 30, scss/_footer-lite.scss */
 .ue-c-footer-lite__copyright address {
   font-style: normal;
 }
 
 @media (min-width: 30em) {
-  /* line 30, scss/_footer-lite.scss */
+  /* line 27, scss/_footer-lite.scss */
   .ue-c-footer-lite__copyright {
     margin: 0 4em;
   }
 }
 
-/* line 41, scss/_footer-lite.scss */
+/* line 38, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-elmundo {
   width: 146px;
   height: 26px;
@@ -1074,7 +1069,7 @@ body {
   margin: 0 auto;
 }
 
-/* line 47, scss/_footer-lite.scss */
+/* line 44, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-expansion {
   width: 130px;
   height: 26px;
@@ -1083,7 +1078,7 @@ body {
   margin-bottom: .5rem;
 }
 
-/* line 55, scss/_footer-lite.scss */
+/* line 52, scss/_footer-lite.scss */
 .ue-c-footer-lite__social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,7 +1089,7 @@ body {
 }
 
 @media (min-width: 30em) {
-  /* line 55, scss/_footer-lite.scss */
+  /* line 52, scss/_footer-lite.scss */
   .ue-c-footer-lite__social-networks {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
@@ -1102,7 +1097,7 @@ body {
   }
 }
 
-/* line 62, scss/_footer-lite.scss */
+/* line 59, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon {
   width: 30px;
   height: 30px;
@@ -1110,44 +1105,44 @@ body {
   padding: 0 10px;
 }
 
-/* line 70, scss/_footer-lite.scss */
+/* line 67, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-twitter:hover #twitter-fondo {
   fill: #326e9b;
 }
 
-/* line 73, scss/_footer-lite.scss */
+/* line 70, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-twitter:hover #twitter-icon {
   fill: #fff;
 }
 
-/* line 80, scss/_footer-lite.scss */
+/* line 77, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-facebook:hover #facebook-fondo {
   fill: #326e9b;
 }
 
-/* line 83, scss/_footer-lite.scss */
+/* line 80, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-facebook:hover #facebook-icon {
   fill: #fff;
 }
 
-/* line 90, scss/_footer-lite.scss */
+/* line 87, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-rss:hover #rss-fondo {
   fill: #326e9b;
 }
 
-/* line 93, scss/_footer-lite.scss */
+/* line 90, scss/_footer-lite.scss */
 .ue-c-footer-lite__icon-rss:hover #rss-icon {
   fill: #fff;
 }
 
 @media (min-width: 30em) {
-  /* line 98, scss/_footer-lite.scss */
+  /* line 95, scss/_footer-lite.scss */
   .ue-c-footer-lite__icon-whatsapp {
     display: none;
   }
 }
 
-/* line 104, scss/_footer-lite.scss */
+/* line 101, scss/_footer-lite.scss */
 .ue-c-footer-lite__partners {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,7 +1153,7 @@ body {
 }
 
 @media (min-width: 30em) {
-  /* line 104, scss/_footer-lite.scss */
+  /* line 101, scss/_footer-lite.scss */
   .ue-c-footer-lite__partners {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
@@ -1166,40 +1161,33 @@ body {
   }
 }
 
-/* line 111, scss/_footer-lite.scss */
+/* line 108, scss/_footer-lite.scss */
 .ue-c-footer-lite__partner {
   padding: 0 5px;
   display: block;
 }
 
-/* line 115, scss/_footer-lite.scss */
+/* line 112, scss/_footer-lite.scss */
 .ue-c-footer-lite__partners-reverso {
   height: 34px;
   width: 34px;
 }
 
-/* line 119, scss/_footer-lite.scss */
+/* line 116, scss/_footer-lite.scss */
 .ue-c-footer-lite__partners-ntt {
   width: 100px;
   height: 34px;
 }
 
-/* line 123, scss/_footer-lite.scss */
+/* line 120, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-copyright {
   margin-bottom: 1.5em;
-  padding: 0.75em;
-  border-top: 1px solid #f3f3f3;
-  border-bottom: 1px solid #f3f3f3;
-}
-
-/* line 128, scss/_footer-lite.scss */
-.is-expansion .ue-c-footer-lite__list-copyright {
   border: 0;
   padding: 0;
 }
 
 @media (min-width: 30em) {
-  /* line 123, scss/_footer-lite.scss */
+  /* line 120, scss/_footer-lite.scss */
   .ue-c-footer-lite__list-copyright {
     border: 0;
     -webkit-box-ordinal-group: 3;
@@ -1210,7 +1198,7 @@ body {
   }
 }
 
-/* line 139, scss/_footer-lite.scss */
+/* line 131, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative {
   padding: 0.75em 0;
   border-top: 1px solid #f3f3f3;
@@ -1218,46 +1206,46 @@ body {
   text-align: center;
 }
 
-/* line 144, scss/_footer-lite.scss */
+/* line 136, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative li {
   display: inline-block;
 }
 
-/* line 146, scss/_footer-lite.scss */
+/* line 138, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative li:after {
   content: "|";
   margin: 0 10px;
 }
 
-/* line 151, scss/_footer-lite.scss */
+/* line 143, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative li:last-of-type:after {
   content: "";
   margin: 0;
 }
 
-/* line 156, scss/_footer-lite.scss */
+/* line 148, scss/_footer-lite.scss */
 .is-expansion .ue-c-footer-lite__list-corporative li {
   margin: 0 10px;
 }
 
-/* line 158, scss/_footer-lite.scss */
+/* line 150, scss/_footer-lite.scss */
 .is-expansion .ue-c-footer-lite__list-corporative li:after {
   content: none;
 }
 
-/* line 162, scss/_footer-lite.scss */
+/* line 154, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative li a {
   font-size: 13px;
   color: #181715;
   text-decoration: none;
 }
 
-/* line 166, scss/_footer-lite.scss */
+/* line 158, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-corporative li a:hover {
   color: #49a3db;
 }
 
-/* line 172, scss/_footer-lite.scss */
+/* line 164, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1269,7 +1257,7 @@ body {
 }
 
 @media (min-width: 30em) {
-  /* line 172, scss/_footer-lite.scss */
+  /* line 164, scss/_footer-lite.scss */
   .ue-c-footer-lite__list-contact {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1281,7 +1269,7 @@ body {
   }
 }
 
-/* line 179, scss/_footer-lite.scss */
+/* line 171, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-contact p {
   font-family: "Heebo", sans-serif;
   font-size: 13px;
@@ -1289,20 +1277,20 @@ body {
   color: #181715;
 }
 
-/* line 185, scss/_footer-lite.scss */
+/* line 177, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-contact-group {
   text-align: center;
   margin: 0 2rem;
   padding: 0;
 }
 
-/* line 189, scss/_footer-lite.scss */
+/* line 181, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-contact-group a {
   display: inline-block;
   margin: 0 .2rem;
 }
 
-/* line 195, scss/_footer-lite.scss */
+/* line 187, scss/_footer-lite.scss */
 .ue-c-footer-lite__list-contact-button {
   background-color: #216087;
   color: #fff;
@@ -1318,7 +1306,7 @@ body {
 }
 
 @media (min-width: 30em) {
-  /* line 209, scss/_footer-lite.scss */
+  /* line 201, scss/_footer-lite.scss */
   .ue-c-footer-lite__container-first {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,12 +1,9 @@
 // FOOTER
 
 .ue-c-footer-lite {
-  font-family: $font-footer;
-  &.is-expansion {
     font-family: $fontRegular;
     background-color: $colorMain;
     padding: 1rem 0;
-  }
   ul {
     list-style: none;
   }
@@ -29,7 +26,7 @@
   }
   &__copyright {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     address {
       font-style: normal;
     }
@@ -122,13 +119,8 @@
   }
   &__list-copyright {
     margin-bottom: 1.5em;
-    padding: 0.75em;
-    border-top: 1px solid $color5;
-    border-bottom: 1px solid $color5;
-    .is-expansion &{
-      border: 0;
-      padding: 0;
-    }
+    border: 0;
+    padding: 0;
     @include mq( $mq1 ) {
       border:0;
       order: 2;

@@ -12,6 +12,7 @@ $color3: #216087;
 $color4: #226894;
 $color5: #f3f3f3;
 $color6 :#e2e2e2;
+$color7 :#e2d8cb;
 $colorTextMain:#181715;
 
 $colorMain: #fff1e0;
@@ -41,7 +42,7 @@ $ue-c-premium-account: (
     plan:( background-color: $color0, border: 1px solid $colorMain ),
     button: (font-family: $fontRegular,  font-size: 14px),
     bookmark: ( background-color: $colorMain),
-    help: ( font-family: $fontRegular, background-color: $color0, border:1px solid $colorMain3)
+    help: ( font-family: $fontRegular, background-color: $color7, border:1px solid $colorMain3)
 );
 
 $ue-c-header-lite: (

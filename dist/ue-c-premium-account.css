@@ -367,36 +367,17 @@ body {
   border: 1px solid #fff1e0;
   position: relative;
   z-index: 0;
-  margin: 0 -600rem;
-  padding: 1.2rem 600rem;
+  padding: 1rem;
+  margin: 0 -1rem;
   background: white;
 }
 
-@media (min-width: 30em) {
-  /* line 132, scss/ue-c-premium-account.scss */
-  .ue-c-premium-account__plan {
-    background: transparent;
-  }
-}
-
-/* line 150, scss/ue-c-premium-account.scss */
-.ue-c-premium-account__plan::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 598.5rem;
-  right: 598.5rem;
-  background: white;
-}
-
-/* line 161, scss/ue-c-premium-account.scss */
+/* line 146, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-text {
   margin: 0;
 }
 
-/* line 164, scss/ue-c-premium-account.scss */
+/* line 149, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-list {
   list-style: none;
   font-weight: bolder;
@@ -404,7 +385,7 @@ body {
   padding: 0;
 }
 
-/* line 170, scss/ue-c-premium-account.scss */
+/* line 155, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button {
   font-size: 14px;
   font-family: "Heebo", sans-serif;
@@ -419,24 +400,24 @@ body {
   min-width: 107px;
 }
 
-/* line 182, scss/ue-c-premium-account.scss */
+/* line 167, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__plan-button:hover {
   text-decoration: underline;
   background-color: #fff;
 }
 
-/* line 188, scss/ue-c-premium-account.scss */
+/* line 173, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__icon {
   width: 20px;
   height: 20px;
 }
 
-/* line 192, scss/ue-c-premium-account.scss */
+/* line 177, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   margin: 20px 0;
 }
 
-/* line 195, scss/ue-c-premium-account.scss */
+/* line 180, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,7 +428,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 200, scss/ue-c-premium-account.scss */
+/* line 185, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
@@ -459,13 +440,13 @@ body {
   max-width: 160px;
 }
 
-/* line 208, scss/ue-c-premium-account.scss */
+/* line 193, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__rrss-element:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 
-/* line 213, scss/ue-c-premium-account.scss */
+/* line 198, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button {
   width: 100%;
   background-color: #216087;
@@ -477,21 +458,21 @@ body {
   font-size: 15px;
 }
 
-/* line 222, scss/ue-c-premium-account.scss */
+/* line 207, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button:hover {
   background-color: #1a4d6c;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 227, scss/ue-c-premium-account.scss */
+/* line 212, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__button--inverse {
   background-color: #fff;
   border: 1px solid #386ab0;
   color: #386ab0;
 }
 
-/* line 233, scss/ue-c-premium-account.scss */
+/* line 218, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark {
   text-align: center;
   width: 100%;
@@ -500,7 +481,7 @@ body {
   height: 22px;
 }
 
-/* line 239, scss/ue-c-premium-account.scss */
+/* line 224, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark::after {
   content: "";
   width: 100%;
@@ -511,7 +492,7 @@ body {
   position: absolute;
 }
 
-/* line 248, scss/ue-c-premium-account.scss */
+/* line 233, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__bookmark p {
   font-size: 18px;
   line-height: 18px;
@@ -526,20 +507,20 @@ body {
   z-index: 1;
 }
 
-/* line 261, scss/ue-c-premium-account.scss */
+/* line 246, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext {
   font-family: "Heebo", sans-serif;
   color: #5d6d7e;
   margin: 0;
 }
 
-/* line 265, scss/ue-c-premium-account.scss */
+/* line 250, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__smalltext p {
   font-size: 13px;
   line-height: 15px;
 }
 
-/* line 270, scss/ue-c-premium-account.scss */
+/* line 255, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
@@ -560,12 +541,12 @@ body {
   cursor: pointer;
 }
 
-/* line 282, scss/ue-c-premium-account.scss */
+/* line 267, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal:hover {
   background-color: #e2e2e2;
 }
 
-/* line 286, scss/ue-c-premium-account.scss */
+/* line 271, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,7 +556,7 @@ body {
   align-items: center;
 }
 
-/* line 289, scss/ue-c-premium-account.scss */
+/* line 274, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span {
   margin-right: 8px;
   font-family: "Roboto Condensed";
@@ -583,19 +564,19 @@ body {
   color: black;
 }
 
-/* line 294, scss/ue-c-premium-account.scss */
+/* line 279, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__paypal-text span:hover {
   text-decoration: none;
 }
 
-/* line 299, scss/ue-c-premium-account.scss */
+/* line 284, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
   margin-bottom: 16px;
 }
 
-/* line 304, scss/ue-c-premium-account.scss */
+/* line 289, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,28 +588,28 @@ body {
   font-size: 20px;
 }
 
-/* line 309, scss/ue-c-premium-account.scss */
+/* line 294, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text > span {
   margin-right: 0.5rem;
 }
 
-/* line 312, scss/ue-c-premium-account.scss */
+/* line 297, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__card-text > svg {
   margin: 0  0.3rem;
 }
 
-/* line 316, scss/ue-c-premium-account.scss */
+/* line 301, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__accept {
   font-family: "Heebo", sans-serif;
   font-size: 15px;
 }
 
-/* line 320, scss/ue-c-premium-account.scss */
+/* line 305, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message {
   text-align: center;
 }
 
-/* line 322, scss/ue-c-premium-account.scss */
+/* line 307, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-maintitle {
   font-size: 20px;
   line-height: 1em;
@@ -643,25 +624,25 @@ body {
   color: #181715;
 }
 
-/* line 326, scss/ue-c-premium-account.scss */
+/* line 311, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-title {
   font-size: 17px;
   margin: 0 0 .5em 0;
 }
 
-/* line 330, scss/ue-c-premium-account.scss */
+/* line 315, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-text {
   font-size: 14px;
   font-family: "Heebo", sans-serif;
   color: #181715;
 }
 
-/* line 334, scss/ue-c-premium-account.scss */
+/* line 319, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-text a {
   font-weight: bolder;
 }
 
-/* line 338, scss/ue-c-premium-account.scss */
+/* line 323, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-correct {
   border-radius: 4px;
   border: 1px solid #bcd7b8;
@@ -671,7 +652,7 @@ body {
   margin-bottom: 2em;
 }
 
-/* line 346, scss/ue-c-premium-account.scss */
+/* line 331, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-error {
   border-radius: 4px;
   border: 1px solid #af2315;
@@ -681,13 +662,13 @@ body {
   margin-bottom: 2em;
 }
 
-/* line 364, scss/ue-c-premium-account.scss */
+/* line 349, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-download {
   margin-bottom: 1em;
   display: block;
 }
 
-/* line 368, scss/ue-c-premium-account.scss */
+/* line 353, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -697,17 +678,17 @@ body {
   justify-content: space-between;
 }
 
-/* line 371, scss/ue-c-premium-account.scss */
+/* line 356, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-blocks > div {
   width: 45%;
 }
 
-/* line 374, scss/ue-c-premium-account.scss */
+/* line 359, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-blocks > div:nth-child(1):nth-last-child(1) {
   width: 100%;
 }
 
-/* line 378, scss/ue-c-premium-account.scss */
+/* line 363, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-block {
   background-color: #fff;
   border-radius: 4px;
@@ -716,40 +697,40 @@ body {
   padding-top: 10px;
 }
 
-/* line 384, scss/ue-c-premium-account.scss */
+/* line 369, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-block p {
   margin: 0;
 }
 
-/* line 388, scss/ue-c-premium-account.scss */
+/* line 373, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message-price {
   font-size: 28px;
   font-weight: normal;
   margin-bottom: 1em;
 }
 
-/* line 393, scss/ue-c-premium-account.scss */
+/* line 378, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__message button {
   width: 85%;
   margin: 10px;
 }
 
-/* line 398, scss/ue-c-premium-account.scss */
+/* line 383, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container {
   position: relative;
 }
 
-/* line 400, scss/ue-c-premium-account.scss */
+/* line 385, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container > * {
   margin-bottom: .5rem;
 }
 
-/* line 403, scss/ue-c-premium-account.scss */
+/* line 388, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__container p {
   margin: 0;
 }
 
-/* line 407, scss/ue-c-premium-account.scss */
+/* line 392, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,19 +738,19 @@ body {
   margin: 20px 0;
 }
 
-/* line 411, scss/ue-c-premium-account.scss */
+/* line 396, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-input {
   width: 20px;
   height: 20px;
   margin-right: 15px;
 }
 
-/* line 416, scss/ue-c-premium-account.scss */
+/* line 401, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__confirm-label {
   margin: 0 0 0 5px;
 }
 
-/* line 419, scss/ue-c-premium-account.scss */
+/* line 404, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help {
   text-align: center;
   background-color: #e2d8cb;
@@ -778,14 +759,14 @@ body {
   border: 1px solid #cecece;
 }
 
-/* line 425, scss/ue-c-premium-account.scss */
+/* line 410, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help-text {
   font-weight: bold;
   margin: 0;
   line-height: 1.5rem;
 }
 
-/* line 430, scss/ue-c-premium-account.scss */
+/* line 415, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help-link {
   color: #216087;
   text-decoration: none;
@@ -796,18 +777,18 @@ body {
   text-decoration: underline;
 }
 
-/* line 433, scss/ue-c-premium-account.scss */
+/* line 418, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help span a {
   color: black;
   text-decoration: none;
 }
 
-/* line 437, scss/ue-c-premium-account.scss */
+/* line 422, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__help a {
   margin-bottom: 0;
 }
 
-/* line 442, scss/ue-c-premium-account.scss */
+/* line 427, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-maintitle {
   font-size: 20px;
   line-height: 1em;
@@ -822,33 +803,33 @@ body {
   color: #181715;
 }
 
-/* line 445, scss/ue-c-premium-account.scss */
+/* line 430, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-maintext {
   margin-bottom: 1em;
 }
 
-/* line 447, scss/ue-c-premium-account.scss */
+/* line 432, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-maintext p {
   font-family: "Roboto Condensed";
   margin: 0;
 }
 
-/* line 450, scss/ue-c-premium-account.scss */
+/* line 435, scss/ue-c-premium-account.scss */
 .is-expansion .ue-c-premium-account__promotional-maintext p {
   font-family: "Heebo", sans-serif;
 }
 
-/* line 454, scss/ue-c-premium-account.scss */
+/* line 439, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-maintext span {
   font-weight: bold;
 }
 
-/* line 458, scss/ue-c-premium-account.scss */
+/* line 443, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-oldprice {
   position: relative;
 }
 
-/* line 460, scss/ue-c-premium-account.scss */
+/* line 445, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-oldprice::before {
   content: "";
   height: 1px;
@@ -858,17 +839,17 @@ body {
   top: 50%;
 }
 
-/* line 469, scss/ue-c-premium-account.scss */
+/* line 454, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-newprice {
   color: #0b7542;
 }
 
-/* line 471, scss/ue-c-premium-account.scss */
+/* line 456, scss/ue-c-premium-account.scss */
 .is-expansion .ue-c-premium-account__promotional-newprice {
   color: #386ab0;
 }
 
-/* line 475, scss/ue-c-premium-account.scss */
+/* line 460, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-textlink {
   font-family: "Roboto Condensed";
   font-weight: normal;
@@ -876,7 +857,7 @@ body {
   color: #216087;
 }
 
-/* line 480, scss/ue-c-premium-account.scss */
+/* line 465, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-textlink a {
   font-weight: bold;
   color: #216087;
@@ -888,20 +869,20 @@ body {
   text-decoration: underline;
 }
 
-/* line 485, scss/ue-c-premium-account.scss */
+/* line 470, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-form {
   padding-bottom: 1em;
   margin-bottom: 1em;
   border-bottom: 1px solid #edeef0;
 }
 
-/* line 489, scss/ue-c-premium-account.scss */
+/* line 474, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional-form label {
   font-family: "Heebo", sans-serif;
   font-size: 14px;
 }
 
-/* line 494, scss/ue-c-premium-account.scss */
+/* line 479, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error, .ue-c-premium-account__promotional__correct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -912,40 +893,40 @@ body {
   margin: 3px 0 0px 0px;
 }
 
-/* line 499, scss/ue-c-premium-account.scss */
+/* line 484, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error p, .ue-c-premium-account__promotional__correct p {
   color: #af2315;
   font-size: 14px;
   margin: 0 0 5px 5px;
 }
 
-/* line 503, scss/ue-c-premium-account.scss */
+/* line 488, scss/ue-c-premium-account.scss */
 .is-expansion .ue-c-premium-account__promotional__error p, .is-expansion .ue-c-premium-account__promotional__correct p {
   font-size: 13px;
 }
 
-/* line 507, scss/ue-c-premium-account.scss */
+/* line 492, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__error svg, .ue-c-premium-account__promotional__correct svg {
   fill: #af2315;
   height: 20px;
   width: 20px;
 }
 
-/* line 514, scss/ue-c-premium-account.scss */
+/* line 499, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__promotional__correct p,
 .ue-c-premium-account__promotional__correct svg {
   fill: black;
   color: black;
 }
 
-/* line 521, scss/ue-c-premium-account.scss */
+/* line 506, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list {
   margin: 1.5em 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 525, scss/ue-c-premium-account.scss */
+/* line 510, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element {
   font-family: "Heebo", sans-serif;
   position: relative;
@@ -955,7 +936,7 @@ body {
   font-size: 14px;
 }
 
-/* line 532, scss/ue-c-premium-account.scss */
+/* line 517, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-element::before {
   content: "";
   position: absolute;
@@ -967,12 +948,12 @@ body {
   border-radius: 120px;
 }
 
-/* line 542, scss/ue-c-premium-account.scss */
+/* line 527, scss/ue-c-premium-account.scss */
 .is-expansion .ue-c-premium-account__list-element {
   font-family: "Heebo", sans-serif;
 }
 
-/* line 544, scss/ue-c-premium-account.scss */
+/* line 529, scss/ue-c-premium-account.scss */
 .is-expansion .ue-c-premium-account__list-element::before {
   content: "\2713";
   position: absolute;
@@ -985,7 +966,7 @@ body {
   color: #386ab0;
 }
 
-/* line 557, scss/ue-c-premium-account.scss */
+/* line 542, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__list-link {
   color: #216087;
   text-decoration: none;
@@ -996,7 +977,7 @@ body {
   text-decoration: underline;
 }
 
-/* line 562, scss/ue-c-premium-account.scss */
+/* line 547, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,12 +991,12 @@ body {
   align-items: center;
 }
 
-/* line 567, scss/ue-c-premium-account.scss */
+/* line 552, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-title {
   font-size: 20px;
 }
 
-/* line 570, scss/ue-c-premium-account.scss */
+/* line 555, scss/ue-c-premium-account.scss */
 .ue-c-premium-account__spinner-text {
   font-weight: bold;
   font-size: 17px;

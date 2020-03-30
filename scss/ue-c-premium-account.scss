@@ -133,16 +133,20 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px;
-    background-color: get-value-from-map($ue-c-premium-account, plan, background-color);
+    // padding: 8px;
+    // margin: 0 -1rem;
+    // background-color: get-value-from-map($ue-c-premium-account, plan, background-color);
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     font-size: 14px;
     border: get-value-from-map($ue-c-premium-account, plan, border);
     position: relative; 
     z-index: 0;
-    padding: 1rem;
-    margin: 0 -1rem;
-    background: white;
+    button{
+      &:hover{
+        background-color: transparent;
+      }
+    }
     &-text {
       margin: 0;
     }
